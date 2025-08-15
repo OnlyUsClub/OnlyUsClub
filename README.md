@@ -1,16 +1,26 @@
-## Hi there 👋
+# Only Us — Site (Vite + React + Tailwind)
 
-<!--
-**OnlyUsClub/OnlyUsClub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Développement local (facultatif)
+```bash
+npm i
+npm run dev
+```
 
-Here are some ideas to get you started:
+## Build
+```bash
+npm run build
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Déploiement
+
+### Vercel (recommandé)
+- Importer le projet dans Vercel via GitHub
+- Build command: `npm run build`
+- Output: `dist`
+- `vercel.json` gère le fallback pour React Router.
+
+### Netlify
+- Le fichier `public/_redirects` contient `/* /index.html 200`
+
+### GitHub Pages
+- Après `npm run build`, copier `dist/index.html` → `dist/404.html` pour les routes SPA.
