@@ -25,28 +25,19 @@ const SOCIALS = [
 
 // === Demo events (update freely) ===
 const EVENTS = [
-  {
-    title: "Soirée Blanche",
-    date: "2025-08-16",
-    time: "21:00",
-    theme: "Dress code : blanc",
-    description: "Ambiance chic & sensuelle, bar à bulles, DJ set.",
-  },
-  {
-    title: "Tapas & Chill",
-    date: "2025-08-17",
-    time: "20:30",
-    theme: "After-weekend détente",
-    description: "Rencontres, musique lounge et petites assiettes.",
-  },
-  {
-    title: "Uniformes & Fantasmes",
-    date: "2025-08-23",
-    time: "21:00",
-    theme: "Infirmière, militaire, écolier·e, à vous de jouer",
-    description: "Photobooth, playlists thématiques, surprises.",
-  },
+  { title: "Après-midi Coquines", date: "2025-08-15", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-15-apres-midi-coquines.png" },
+  { title: "White Party", date: "2025-08-16", time: "21:00", theme: "Dress code : blanc", description: "Soirée chic en blanc.", poster: "/posters/2025-08-16-white-party.png" },
+  { title: "Les heures suspendues", date: "2025-08-17", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-17-heures-suspenses.png" },
+  { title: "Le Goût de l’Interdit", date: "2025-08-21", time: "21:00", theme: "Interdit", description: "Soirée mystère et tentation.", poster: "/posters/2025-08-21-gout-de-l-interdit.png" },
+  { title: "Après-midi Coquines", date: "2025-08-22", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-22-apres-midi-coquines.png" },
+  { title: "Soirée Masquée", date: "2025-08-22", time: "21:00", theme: "Masques", description: "Intrigue et séduction derrière un masque.", poster: "/posters/2025-08-22-soiree-masquee.png" },
+  { title: "Soirée Enivrante", date: "2025-08-23", time: "21:00", theme: "Enivrante", description: "Une nuit pleine de surprises.", poster: "/posters/2025-08-23-soiree-enivrante.png" },
+  { title: "Les heures suspendues", date: "2025-08-24", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-24-heures-suspenses.png" },
+  { title: "Après-midi Coquines", date: "2025-08-29", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-29-apres-midi-coquines.png" },
+  { title: "House & Tapas", date: "2025-08-29", time: "21:00", theme: "House music", description: "Musique et tapas pour se régaler.", poster: "/posters/2025-08-29-house-tapas.png" },
+  { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
 ];
+
 
 // === Demo gallery (replace with your photos or URLs) ===
 const GALLERY = [
