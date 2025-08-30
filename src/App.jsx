@@ -195,13 +195,18 @@ function Home() {
 }
 
 function Agenda() {
-  const upcoming = useMemo(() => {
-    const now = new Date();
-    return EVENTS
-      .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
-      .filter((e) => e.dt >= new Date(now.getFullYear(), now.getMonth(), now.getDate()))
-      .sort((a, b) => a.dt - b.dt);
-  }, []);
+const upcoming = useMemo(() => {
+  const now = new Date();
+  const endOfToday = new Date(
+    now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999
+  );
+
+  return EVENTS
+    .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
+    .filter((e) => e.dt > endOfToday) // exclut passé + aujourd’hui
+    .sort((a, b) => a.dt - b.dt);
+}, []);
+
 
   return (
     <Section title="Agenda" icon={CalendarIcon} className="bg-black">
