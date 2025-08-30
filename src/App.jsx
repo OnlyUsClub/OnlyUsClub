@@ -1,38 +1,28 @@
 import React, { useMemo, useState } from "react";
 import { BrowserRouter, Routes, Route, NavLink, Link } from "react-router-dom";
 import {
-  Calendar as CalendarIcon,
-  Camera,
-  Info,
-  MapPin,
-  Instagram,
-  Facebook,
-  Phone,
-  Mail,
-  Clock,
-  Menu,
+  Calendar as CalendarIcon, Camera, Info, MapPin, Instagram, Facebook, Phone, Mail, Clock, Menu,
 } from "lucide-react";
 
-// === Quick Config ===
+// === Config rapide ===
 const CLUB_NAME = "L'Only-Us";
 const TAGLINE = "Club libertin – Alès";
 const ADDRESS = "1115 route d'Uzès, 30100 Alès";
 const PHONE_NUMBER = "06 10 39 29 37";
 const EMAIL = "contact@lonlyusclub.fr";
-const OPENING = [
-  { day: "Jeudi", hours: "20:00 – 02:00" },
-  { day: "Vendredi", hours: "20:00 – 03:00" },
-  { day: "Samedi", hours: "20:00 – 04:00" },
-  { day: "Dimanche", hours: "20:00 – 01:00" },
-];
 const SOCIALS = [
   { name: "Instagram", href: "https://www.instagram.com/lonlyusclub/", icon: Instagram },
-  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61579129558554", icon: Facebook },
+  { name: "Facebook",  href: "https://www.facebook.com/profile.php?id=61579129558554", icon: Facebook },
 ];
 
-// === Tes événements + affiches (.png dans public/posters) ===
+/* =========================================================
+   1) TES ÉVÉNEMENTS
+   - Mets l'image dans /public/posters/
+   - Donne un NOM SANS DATE (ex: "apres-midi-coquines.png")
+   - Si l'événement est périodique, RÉUTILISE le même poster.
+   - Ajoute / supprime librement des lignes ci-dessous.
+   ========================================================= */
 const EVENTS = [
- 
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
   // VENDREDIS (20:00 → 01:00)
   { title: "Soirée Lounge",   date: "2025-09-05", time: "20:00", theme: "Lounge",   poster: "/posters/Vendredi 5 Lounge.png" },
@@ -91,9 +81,47 @@ const EVENTS = [
   { title: "Soirées Coquines (Dimanche)", date: "2025-09-14", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
   { title: "Soirées Coquines (Dimanche)", date: "2025-09-21", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
   { title: "Soirées Coquines (Dimanche)", date: "2025-09-28", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+
+  // ==== AJOUTE ICI tes nouveaux évènements de la capture ====
+  // FORMAT:
+  // { title: "Titre", date: "YYYY-MM-DD", time: "HH:MM", theme: "texte optionnel", poster: "/posters/slug-sans-date.png" },
 ];
 
-// === UI helpers ===
+/* =========================================================
+   2) PRIX AUTOMATIQUES
+   - Femmes & personnes trans invitées (toujours)
+   - Après-midi (lun→sam) : couples 25€, hommes 30€
+   - Soirées lun→jeu : couples 25€, hommes 35€
+   - Ven/Sam/Dim soir : couples 30€ • 2 consos, hommes 50€ • 2 consos
+   ========================================================= */
+function getPricing(dt, timeStr) {
+  const d = new Date(dt);                 // 0=Dim … 6=Sam
+  const weekday = d.getDay();
+  const hour = Number((timeStr || "20:00").split(":")[0]);
+  const isAfternoon = hour < 18;
+
+  const res = {
+    women: "Femmes & personnes trans invitées",
+    couples: "",
+    men: "",
+  };
+
+  if (isAfternoon && weekday >= 1 && weekday <= 6) {
+    res.couples = "Couples : 25€";
+    res.men     = "Hommes seuls : 30€";
+  } else {
+    if (weekday >= 1 && weekday <= 4) {   // Lun→Jeu
+      res.couples = "Couples : 25€";
+      res.men     = "Hommes seuls : 35€";
+    } else {                              // Ven / Sam / Dim
+      res.couples = "Couples : 30€ • 2 consos";
+      res.men     = "Hommes seuls : 50€ • 2 consos";
+    }
+  }
+  return res;
+}
+
+// === Petits helpers d’UI ===
 function Container({ children, className = "" }) {
   return <div className={`mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ${className}`}>{children}</div>;
 }
@@ -116,19 +144,17 @@ function Pill({ children }) {
   return <span className="rounded-full border border-red-700/60 px-3 py-1 text-sm text-white/90">{children}</span>;
 }
 
-// === Layout ===
+// === Layout (noir/rouge/or) ===
 function Navbar() {
   const [open, setOpen] = useState(false);
   const navLink = ({ isActive }) =>
     `rounded-full px-4 py-2 text-sm sm:text-base transition ${
       isActive ? "bg-red-600 text-white" : "text-red-400 hover:bg-red-700 hover:text-white"
     }`;
-  const close = () => setOpen(false);
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-red-800 bg-black text-white">
       <Container className="flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3" onClick={close}>
+        <Link to="/" className="flex items-center gap-3">
           <img src="/Logo.jpeg" alt="Logo L'Only-Us" className="h-10 w-auto" />
           <div>
             <div className="text-lg font-bold leading-tight text-yellow-500">{CLUB_NAME}</div>
@@ -137,28 +163,17 @@ function Navbar() {
         </Link>
         <nav className="hidden md:flex items-center gap-2">
           <NavLink to="/agenda" className={navLink}><CalendarIcon className="mr-2 inline h-4 w-4"/>Agenda</NavLink>
-          <NavLink to="/club" className={navLink}><Info className="mr-2 inline h-4 w-4"/>Présentation</NavLink>
-          <NavLink to="/galerie" className={navLink}><Camera className="mr-2 inline h-4 w-4"/>Photos</NavLink>
-          <NavLink to="/infos" className={navLink}><MapPin className="mr-2 inline h-4 w-4"/>Infos</NavLink>
+          <NavLink to="/club"   className={navLink}><Info className="mr-2 inline h-4 w-4"/>Présentation</NavLink>
+          <NavLink to="/galerie"className={navLink}><Camera className="mr-2 inline h-4 w-4"/>Photos</NavLink>
+          <NavLink to="/infos"  className={navLink}><MapPin className="mr-2 inline h-4 w-4"/>Infos</NavLink>
         </nav>
-        <button className="md:hidden rounded-full border border-red-700 p-2" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className="md:hidden rounded-full border border-red-700 p-2" onClick={() => setOpen(v=>!v)} aria-label="Menu">
           <Menu className="h-5 w-5" />
         </button>
       </Container>
-      {open && (
-        <div className="border-t border-red-800 md:hidden bg-black text-white">
-          <Container className="flex flex-col py-2">
-            <NavLink to="/agenda" className="px-3 py-2" onClick={close}>Agenda</NavLink>
-            <NavLink to="/club" className="px-3 py-2" onClick={close}>Présentation</NavLink>
-            <NavLink to="/galerie" className="px-3 py-2" onClick={close}>Photos</NavLink>
-            <NavLink to="/infos" className="px-3 py-2" onClick={close}>Infos</NavLink>
-          </Container>
-        </div>
-      )}
     </header>
   );
 }
-
 function Footer() {
   return (
     <footer className="border-t border-red-800 py-10 bg-black">
@@ -185,8 +200,8 @@ function Footer() {
         <div>
           <div className="font-semibold text-white">Horaires</div>
           <ul className="mt-2 space-y-1 text-sm text-white/80">
-            {OPENING.map((o) => (
-              <li key={o.day} className="flex items-center gap-2"><Clock className="h-4 w-4 text-red-500" /> {o.day} : {o.hours}</li>
+            {["Jeudi 20:00–02:00","Vendredi 20:00–03:00","Samedi 20:00–04:00","Dimanche 20:00–01:00"].map((t,i)=>(
+              <li key={i} className="flex items-center gap-2"><Clock className="h-4 w-4 text-red-500" /> {t}</li>
             ))}
           </ul>
         </div>
@@ -199,174 +214,62 @@ function Footer() {
 }
 
 // === Pages ===
-function Home() {
-  return (
-    <>
-      <section className="bg-black">
-        <Container className="py-12 sm:py-20">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div>
-              <h1 className="text-4xl sm:text-5xl font-black leading-tight text-yellow-500">{CLUB_NAME}</h1>
-              <p className="mt-3 text-white/80">{TAGLINE}</p>
-              <p className="mt-6 text-base sm:text-lg text-white/80 max-w-prose">
-                Piste de danse, espace balnéo (jacuzzis, sauna, hammam), coins câlins & bar.
-                Des événements chaque semaine dans une ambiance élégante, sensuelle et respectueuse.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link to="/agenda" className="rounded-2xl bg-red-700 px-5 py-3 text-white font-medium hover:bg-red-600 transition">Voir l'agenda</Link>
-                <Link to="/galerie" className="rounded-2xl border border-red-700 px-5 py-3 font-medium text-white hover:bg-red-800/50 transition">Découvrir en images</Link>
-              </div>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {SOCIALS.map((s) => (
-                  <a key={s.name} href={s.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-red-700/60 px-3 py-1 text-sm text-red-400 hover:bg-red-700 hover:text-white transition">
-                    <s.icon className="h-4 w-4" /> {s.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div className="rounded-3xl overflow-hidden border border-red-800">
-              <img className="aspect-video w-full object-cover" src="https://images.unsplash.com/photo-1561484930-998b6a7c8883?w=1600" alt="Ambiance club" />
-            </div>
-          </div>
-        </Container>
-      </section>
-      <Section title="Ce qui vous attend" icon={Info} className="bg-black">
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <li className="rounded-2xl border border-red-800 p-5 bg-black/60"><div className="text-lg font-semibold text-white">Espace balnéo</div><p className="mt-2 text-sm text-white/70">Jacuzzis, sauna, hammam pour se détendre.</p></li>
-          <li className="rounded-2xl border border-red-800 p-5 bg-black/60"><div className="text-lg font-semibold text-white">Piste de danse</div><p className="mt-2 text-sm text-white/70">DJ & lumière pour lâcher prise.</p></li>
-          <li className="rounded-2xl border border-red-800 p-5 bg-black/60"><div className="text-lg font-semibold text-white">Coins câlins</div><p className="mt-2 text-sm text-white/70">Espaces confortables et discrets.</p></li>
-          <li className="rounded-2xl border border-red-800 p-5 bg-black/60"><div className="text-lg font-semibold text-white">Bar & tapas</div><p className="mt-2 text-sm text-white/70">Cocktails et petites faims (selon soirs).</p></li>
-        </ul>
-      </Section>
-    </>
-  );
-}
-
 function Agenda() {
-const upcoming = useMemo(() => {
-  const now = new Date();
-  const endOfToday = new Date(
-    now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999
-  );
-
-  return EVENTS
-    .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
-    .filter((e) => e.dt > endOfToday) // exclut passé + aujourd’hui
-    .sort((a, b) => a.dt - b.dt);
-}, []);
-
+  // → NE GARDE QUE LES ÉVÉNEMENTS STRICTEMENT FUTURS (passe + aujourd’hui exclus)
+  const upcoming = useMemo(() => {
+    const now = new Date();
+    const endOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+    return EVENTS
+      .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
+      .filter((e) => e.dt > endOfToday)
+      .sort((a, b) => a.dt - b.dt);
+  }, []);
 
   return (
     <Section title="Agenda" icon={CalendarIcon} className="bg-black">
-      <div className="mb-4 flex flex-wrap items-center gap-2">
-        <Pill>Dress code respectueux</Pill>
-        <Pill>Entrée réservée aux majeurs</Pill>
-        <Pill>Couples & solos bienvenus</Pill>
-      </div>
       {upcoming.length === 0 ? (
-        <div className="rounded-2xl border border-red-800 p-6 text-sm text-white/80 bg-black/60">Aucun événement à venir n'est publié pour le moment.</div>
+        <div className="rounded-2xl border border-red-800 p-6 text-sm text-white/80 bg-black/60">
+          Aucun événement à venir n'est publié pour le moment.
+        </div>
       ) : (
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {upcoming.map((e) => (
-            <li key={`${e.date}-${e.title}`} className="rounded-2xl overflow-hidden border border-red-800 bg-black">
-              <div className="aspect-[4/5] w-full bg-red-950/20">
-                {e.poster ? (
-                  <img src={e.poster} alt={`Affiche ${e.title}`} className="h-full w-full object-cover" />
-                ) : (
-                  <div className="h-full w-full grid place-items-center text-red-400">{e.title}</div>
-                )}
-              </div>
-              <div className="p-4">
-                <div className="text-base font-bold text-yellow-500">{e.title}</div>
-                <div className="mt-1 text-sm text-red-400">{formatDate(e.dt)} • {e.time} • {e.theme}</div>
-                {e.description && <p className="mt-2 text-sm text-white/90">{e.description}</p>}
-              </div>
-            </li>
-          ))}
+          {upcoming.map((e) => {
+            const pricing = getPricing(e.dt, e.time);
+            return (
+              <li key={`${e.date}-${e.title}`} className="rounded-2xl overflow-hidden border border-red-800 bg-black">
+                <div className="aspect-[4/5] w-full bg-red-950/20">
+                  {e.poster ? (
+                    <img src={e.poster} alt={`Affiche ${e.title}`} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="h-full w-full grid place-items-center text-red-400">{e.title}</div>
+                  )}
+                </div>
+                <div className="p-4">
+                  <div className="text-base font-bold text-yellow-500">{e.title}</div>
+                  <div className="mt-1 text-sm text-red-400">
+                    {new Date(e.date).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" })} • {e.time}{e.theme ? ` • ${e.theme}` : ""}
+                  </div>
+
+                  {/* Tarifs automatiques */}
+                  <div className="mt-3 rounded-xl border border-red-800 p-3 bg-black/60">
+                    <div className="text-xs text-white/80">{pricing.women}</div>
+                    <div className="mt-1 text-sm text-yellow-500">{pricing.couples}</div>
+                    <div className="text-sm text-red-400">{pricing.men}</div>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       )}
     </Section>
   );
 }
 
-function Club() {
-  return (
-    <Section title="Présentation du club" icon={Info} className="bg-black text-white">
-      <div className="prose prose-invert max-w-none">
-        <p>
-          Bienvenue au <strong>{CLUB_NAME}</strong>, votre club libertin à Alès. Ici, la bienveillance et le respect
-          sont au cœur de tout : chacun évolue à son rythme, dans un cadre élégant, propre et sécurisé.
-        </p>
-        <ul>
-          <li><strong>Espace balnéo :</strong> jacuzzis, sauna, hammam.</li>
-          <li><strong>Bar & piste de danse :</strong> cocktails, DJ, jeux de lumières.</li>
-          <li><strong>Coins câlins :</strong> confortables, discrets, entretenus tout au long de la soirée.</li>
-          <li><strong>Dress code :</strong> tenue soignée, thématique selon soirées (voir agenda).</li>
-          <li><strong>Règlement :</strong> consentement explicite, hygiène irréprochable, pas de photos non consenties.</li>
-        </ul>
-      </div>
-    </Section>
-  );
-}
-
-function Galerie() {
-  return (
-    <Section title="Galerie photos" icon={Camera} className="bg-black text-white">
-      <p className="mb-6 text-sm text-white/80">Une sélection d'ambiances (remplace par tes propres photos).</p>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {[
-          { src: "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200", alt: "Bar & cocktails" },
-          { src: "https://images.unsplash.com/photo-1541976076758-347942db1970?w=1200", alt: "Ambiance rouge" },
-          { src: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200", alt: "Piste de danse" },
-        ].map((img, i) => (
-          <div key={i} className="group overflow-hidden rounded-3xl border border-red-800 bg-black">
-            <img src={img.src} alt={img.alt} className="h-64 w-full object-cover transition group-hover:scale-105" />
-          </div>
-        ))}
-      </div>
-    </Section>
-  );
-}
-
-function Infos() {
-  return (
-    <Section title="Infos pratiques" icon={MapPin} className="bg-black text-white">
-      <div className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-3xl border border-red-800 p-6 bg-black">
-          <div className="font-semibold text-white">Adresse</div>
-          <div className="mt-1 text-sm text-white/90">{ADDRESS}</div>
-          <div className="mt-4 font-semibold text-white">Contact</div>
-          <div className="mt-1 text-sm text-white/90 flex items-center gap-2"><Phone className="h-4 w-4 text-red-500" /> <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a></div>
-          <div className="mt-1 text-sm text-white/90 flex items-center gap-2"><Mail className="h-4 w-4 text-red-500" /> <a href={`mailto:${EMAIL}`}>{EMAIL}</a></div>
-          <div className="mt-4 font-semibold text-white">Réseaux sociaux</div>
-          <div className="mt-2 flex flex-wrap gap-2">
-            {SOCIALS.map((s) => (
-              <a key={s.name} href={s.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-red-700/60 px-3 py-1 text-sm text-red-400 hover:bg-red-700 hover:text-white transition">
-                <s.icon className="h-4 w-4" /> {s.name}
-              </a>
-            ))}
-          </div>
-          <div className="mt-6 text-xs text-white/60">Accès : parking gratuit devant l'établissement.</div>
-        </div>
-        <div className="rounded-3xl overflow-hidden border border-red-800">
-          <iframe
-            title="Google Maps"
-            src="https://www.google.com/maps?q=1115%20route%20d'Uz%C3%A8s%2030100%20Al%C3%A8s&output=embed"
-            className="h-[420px] w-full"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
-        </div>
-      </div>
-    </Section>
-  );
-}
-
-// === Utilities ===
-function formatDate(d) {
-  return d.toLocaleDateString("fr-FR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-}
+function Home(){return <Section title="Bienvenue" icon={Info} className="bg-black"><Container><p className="text-white/80">Retrouvez nos soirées et après-midis à l’agenda.</p></Container></Section>;}
+function Club(){return <Section title="Présentation du club" icon={Info} className="bg-black"><p className="text-white/80">Ambiance élégante et respectueuse.</p></Section>;}
+function Galerie(){return <Section title="Galerie" icon={Camera} className="bg-black"><p className="text-white/80">Ajoute tes images ici.</p></Section>;}
+function Infos(){return <Section title="Infos pratiques" icon={MapPin} className="bg-black"><p className="text-white/80">{ADDRESS} • {PHONE_NUMBER} • {EMAIL}</p></Section>;}
 
 // === App Root ===
 export default function App() {
