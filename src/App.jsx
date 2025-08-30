@@ -32,17 +32,65 @@ const SOCIALS = [
 
 // === Tes événements + affiches (.png dans public/posters) ===
 const EVENTS = [
-  { title: "Après-midi Coquines", date: "2025-08-15", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-15-apres-midi-coquines.png" },
-  { title: "White Party", date: "2025-08-16", time: "21:00", theme: "Dress code : blanc", description: "Soirée chic en blanc.", poster: "/posters/2025-08-16-white-party.png" },
-  { title: "Les heures suspendues", date: "2025-08-17", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-17-heures-suspenses.png" },
-  { title: "Le Goût de l’Interdit", date: "2025-08-21", time: "21:00", theme: "Interdit", description: "Soirée mystère et tentation.", poster: "/posters/2025-08-21-gout-de-l-interdit.png" },
-  { title: "Après-midi Coquines", date: "2025-08-22", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-22-apres-midi-coquines.png" },
-  { title: "Soirée Masquée", date: "2025-08-22", time: "21:00", theme: "Masques", description: "Intrigue et séduction derrière un masque.", poster: "/posters/2025-08-22-soiree-masquee.png" },
-  { title: "Soirée Enivrante", date: "2025-08-23", time: "21:00", theme: "Enivrante", description: "Une nuit pleine de surprises.", poster: "/posters/2025-08-23-soiree-enivrante.png" },
-  { title: "Les heures suspendues", date: "2025-08-24", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-24-heures-suspenses.png" },
-  { title: "Après-midi Coquines", date: "2025-08-29", time: "14:00", theme: "Détente sensuelle", description: "Moments coquins en journée.", poster: "/posters/2025-08-29-apres-midi-coquines.png" },
-  { title: "House & Tapas", date: "2025-08-29", time: "21:00", theme: "House music", description: "Musique et tapas pour se régaler.", poster: "/posters/2025-08-29-house-tapas.png" },
+ 
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
+  // VENDREDIS (20:00 → 01:00)
+  { title: "Soirée Lounge",   date: "2025-09-05", time: "20:00", theme: "Lounge",   poster: "/posters/Vendredi 5 Lounge.png" },
+  { title: "Pink Party",      date: "2025-09-12", time: "20:00", theme: "Pink",     poster: "/posters/Vendredi 12 rose.png" },
+  { title: "Soirée Fluo",     date: "2025-09-19", time: "20:00", theme: "Fluo",     poster: "/posters/Vendredi 19 Fluo.png" },
+  { title: "Soirée Dentelle", date: "2025-09-26", time: "20:00", theme: "Dentelle", poster: "/posters/Vendredi 26 Dentelle.png" },
+
+  // SAMEDIS (20:00 → 02:00)
+  { title: "Rentrée des fessées (Écolière)", date: "2025-09-06", time: "20:00", theme: "Soirée à thème", poster: "/posters/Samedi 6 Ecoliere.png" },
+  { title: "Soirée Cow Girl",                date: "2025-09-13", time: "20:00", theme: "Western",       poster: "/posters/Samedi 13 Cowgirl.png" },
+  { title: "Topless & Tantrique – Massages par Lianna & Vincent", date: "2025-09-20", time: "20:00", theme: "Massage & Tantrique", poster: "/posters/Samedi 20 massage.png" },
+  { title: "Soirée Uniforme",                date: "2025-09-27", time: "20:00", theme: "Uniforme",      poster: "/posters/Samedi 27 Uniforme.png" },
+
+  // LUNDIS (AM 14:00 → 19:00 / Soir 20:30 → 01:00)
+  { title: "Après-midi Coquines", date: "2025-09-01", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-01", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-08", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-08", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-15", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-15", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-22", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-22", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-29", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-29", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+
+  // MARDIS
+  { title: "Après-midi Coquines", date: "2025-09-02", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-02", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-09", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-09", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-16", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-16", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-23", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-23", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-30", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-30", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+
+  // MERCREDIS (Soir)
+  { title: "Soirées Coquines", date: "2025-09-03", time: "20:30", theme: "Soirée", poster: "/posters/Mercredi Soir.png" },
+  { title: "Soirées Coquines", date: "2025-09-10", time: "20:30", theme: "Soirée", poster: "/posters/Mercredi Soir.png" },
+  { title: "Soirées Coquines", date: "2025-09-17", time: "20:30", theme: "Soirée", poster: "/posters/Mercredi Soir.png" },
+  { title: "Soirées Coquines", date: "2025-09-24", time: "20:30", theme: "Soirée", poster: "/posters/Mercredi Soir.png" },
+
+  // JEUDIS
+  { title: "Après-midi Coquines", date: "2025-09-04", time: "14:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-04", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-11", time: "14:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-11", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-18", time: "14:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-18", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
+  { title: "Après-midi Coquines", date: "2025-09-25", time: "14:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
+  { title: "Soirées Coquines",    date: "2025-09-25", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
+
+  // DIMANCHES (Soir)
+  { title: "Soirées Coquines (Dimanche)", date: "2025-09-07", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Soirées Coquines (Dimanche)", date: "2025-09-14", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Soirées Coquines (Dimanche)", date: "2025-09-21", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Soirées Coquines (Dimanche)", date: "2025-09-28", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
 ];
 
 // === UI helpers ===
