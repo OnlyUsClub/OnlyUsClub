@@ -77,10 +77,11 @@ const EVENTS = [
   { title: "Soirées Coquines",    date: "2025-09-25", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
 
   // DIMANCHES (Soir)
-  { title: "Soirées Coquines (Dimanche)", date: "2025-09-07", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Soirées Coquines (Dimanche)", date: "2025-09-14", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Soirées Coquines (Dimanche)", date: "2025-09-21", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Soirées Coquines (Dimanche)", date: "2025-09-28", time: "20:30", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-07", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-14", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-14", time: "15:00", theme: "Soirée", poster: "/posters/Dimanche 14 glory hole.png" },
+  { title: "Journée coquine", date: "2025-09-21", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-28", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
 
   // ==== AJOUTE ICI tes nouveaux évènements de la capture ====
   // FORMAT:
