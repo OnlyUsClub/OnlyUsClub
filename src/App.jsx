@@ -201,7 +201,7 @@ function Footer() {
         <div>
           <div className="font-semibold text-white">Horaires</div>
           <ul className="mt-2 space-y-1 text-sm text-white/80">
-            {["Jeudi 20:00–02:00","Vendredi 20:00–03:00","Samedi 20:00–04:00","Dimanche 20:00–01:00"].map((t,i)=>(
+            {["Lundi 14:00–19:00  20:30-01:00","Mardi 14:00–19:00  20:30-01:00","Mercredi 14:00–19:00  20:30-01:00","Jeudi 14:00–19:00  20:30-01:00","Vendredi 14:00–19:00  20:00-01:00","Samedi 14:00–19:00  20:00-02:00","Dimanche 14:00–01:00"].map((t,i)=>(
               <li key={i} className="flex items-center gap-2"><Clock className="h-4 w-4 text-red-500" /> {t}</li>
             ))}
           </ul>
