@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+oliimport React, { useMemo, useState } from "react";
 import { BrowserRouter, Routes, Route, NavLink, Link } from "react-router-dom";
 import {
   Calendar as CalendarIcon, Camera, Info, MapPin, Instagram, Facebook, Phone, Mail, Clock, Menu,
@@ -9,7 +9,7 @@ const CLUB_NAME = "L'Only-Us";
 const TAGLINE = "Club libertin – Alès";
 const ADDRESS = "1115 route d'Uzès, 30100 Alès";
 const PHONE_NUMBER = "06 10 39 29 37";
-const EMAIL = "contact@lonlyusclub.fr";
+const EMAIL = "onlyus.clublib@gmail.com";
 const SOCIALS = [
   { name: "Instagram", href: "https://www.instagram.com/lonlyusclub/", icon: Instagram },
   { name: "Facebook",  href: "https://www.facebook.com/profile.php?id=61579129558554", icon: Facebook },
@@ -31,7 +31,7 @@ const EVENTS = [
   { title: "Soirée Dentelle", date: "2025-09-26", time: "20:00", theme: "Dentelle", poster: "/posters/Vendredi 26 Dentelle.png" },
 
   // SAMEDIS (20:00 → 02:00)
-  { title: "Rentrée des fessées (Écolière)", date: "2025-09-06", time: "20:00", theme: "Soirée à thème", poster: "/posters/Samedi 6 Ecoliere.png" },
+  { title: "Rentrée des fessées (Écolière)", date: "2025-09-06", time: "20:00", theme: "Ecolière", poster: "/posters/Samedi 6 Ecoliere.png" },
   { title: "Soirée Cow Girl",                date: "2025-09-13", time: "20:00", theme: "Western",       poster: "/posters/Samedi 13 Cowgirl.png" },
   { title: "Topless & Tantrique – Massages par Lianna & Vincent", date: "2025-09-20", time: "20:00", theme: "Massage & Tantrique", poster: "/posters/Samedi 20 massage.png" },
   { title: "Soirée Uniforme",                date: "2025-09-27", time: "20:00", theme: "Uniforme",      poster: "/posters/Samedi 27 Uniforme.png" },
@@ -77,11 +77,11 @@ const EVENTS = [
   { title: "Soirées Coquines",    date: "2025-09-25", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir.png" },
 
   // DIMANCHES (Soir)
-  { title: "Journée coquine", date: "2025-09-07", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Journée coquine", date: "2025-09-14", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Journée coquine", date: "2025-09-14", time: "15:00", theme: "Soirée", poster: "/posters/Dimanche 14 glory hole.png" },
-  { title: "Journée coquine", date: "2025-09-21", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
-  { title: "Journée coquine", date: "2025-09-28", time: "14:00", theme: "Soirée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-07", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-14", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-14", time: "15:00", theme: "Journée", poster: "/posters/Dimanche 14 glory hole.png" },
+  { title: "Journée coquine", date: "2025-09-21", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
+  { title: "Journée coquine", date: "2025-09-28", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
 
   // ==== AJOUTE ICI tes nouveaux évènements de la capture ====
   // FORMAT:
