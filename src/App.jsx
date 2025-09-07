@@ -349,7 +349,9 @@ function Agenda() {
 function Home(){return <Section className="bg-black">
   <Container>
   <section className="relative bg-black text-center text-white">
-    <img src="/posters/Coin calin.jpeg" alt="Entrée du club" 
+    <img src="/posters/Coin calin.jpeg" alt="Entrée du club"
+      className="absolute inset-0 h-full w-full object-cover opacity-50"
+          />
   <div class="relative z-10 py-32 px-4">
     <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-4">
       Bienvenue à l’Only-Us
