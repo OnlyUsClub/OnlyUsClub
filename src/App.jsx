@@ -346,19 +346,32 @@ function Agenda() {
   );
 }
 
-function Home(){return <Section title="Bienvenue" icon={Info} className="bg-black"><Container><p className="text-white/80">Retrouvez nos soirées et après-midis à l’agenda.</p></Container></Section>;}
+function Home(){return <Section title="Bienvenue" icon={Info} className="bg-black"><Container><p className="text-white/80"><section class="relative bg-black text-center text-white">
+  <img src="/images/Couloir accueil.jpg" alt="Entrée du club" 
+       class="absolute inset-0 h-full w-full object-cover opacity-50" />
+  
+  <div class="relative z-10 py-32 px-4">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-4">
+      Bienvenue à l’Only-Us
+    </h1>
+    <p class="text-lg sm:text-xl max-w-2xl mx-auto text-white/90">
+      ✨ Bienvenue à l’Only-Us, un lieu unique où l’élégance rencontre la sensualité.<br/>
+      Ici, chacun est invité à vivre des instants intenses dans une ambiance raffinée, conviviale et respectueuse.
+    </p>
+  </div>
+</section></p></Container></Section>;}
 function Club(){return <Section title="Présentation du club" icon={Info} className="bg-black"><p className="text-white/80"> <p>
     Situé à Alès, l’Only-Us est un club libertin
     <strong>pensé pour tous ceux qui souhaitent partager des instants de plaisir</strong>
     dans un cadre <strong>élégant, sensuel et respectueux</strong>.
   </p>
 
-  <h3>Ce que vous trouverez</h3>
+  <h3>Ce que vous trouverez:</h3>
   <ul>
     <li><strong>Piste de danse</strong> — soirées à thème et ambiance musicale.</li>
+     <li><strong>Bar & tapas</strong> — cocktails et petites faims (selon soirées).</li>
     <li><strong>Espace balnéo</strong> — jacuzzis, sauna, hammam pour se détendre.</li>
     <li><strong>Coins câlins</strong> — espaces confortables, discrets et entretenus.</li>
-    <li><strong>Bar & tapas</strong> — cocktails et petites faims (selon soirées).</li>
   </ul></p></Section>;}
 function Galerie(){return <Section title="Galerie" icon={Camera} className="bg-black"><p className="text-white/80">Ajoute tes images ici.</p></Section>;}
 function Infos(){return <Section title="Infos pratiques" icon={MapPin} className="bg-black"><p className="text-white/80">{ADDRESS} • {PHONE_NUMBER} • {EMAIL}</p></Section>;}
