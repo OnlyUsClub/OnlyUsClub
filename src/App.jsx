@@ -347,7 +347,7 @@ function Agenda() {
 }
 
 function Home(){return <Section title="Bienvenue" icon={Info} className="bg-black"><Container><p className="text-white/80"><section class="relative bg-black text-center text-white">
-  <img src="/images/Couloir accueil.jpg" alt="Entrée du club" 
+  <img src="/images/Couloir accueil.jpeg" alt="Entrée du club" 
        class="absolute inset-0 h-full w-full object-cover opacity-50" />
   
   <div class="relative z-10 py-32 px-4">
