@@ -348,7 +348,7 @@ function Agenda() {
 
 function Home(){return <Section className="bg-black">
   <Container>
-  <section class="relative bg-black text-center text-white">
+  <section className="relative bg-black text-center text-white">
     <img src="/posters/Coin calin.jpeg" alt="Entrée du club" 
   <div class="relative z-10 py-32 px-4">
     <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-4">
