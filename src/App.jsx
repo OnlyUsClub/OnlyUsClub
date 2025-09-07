@@ -148,33 +148,112 @@ function Pill({ children }) {
 // === Layout (noir/rouge/or) ===
 function Navbar() {
   const [open, setOpen] = useState(false);
+
   const navLink = ({ isActive }) =>
     `rounded-full px-4 py-2 text-sm sm:text-base transition ${
       isActive ? "bg-red-600 text-white" : "text-red-400 hover:bg-red-700 hover:text-white"
     }`;
+
+  // Ferme le menu quand on change de page
+  const close = () => setOpen(false);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-red-800 bg-black text-white">
-      <Container className="flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/Logo.jpeg" alt="Logo L'Only-Us" className="h-10 w-auto" />
-          <div>
-            <div className="text-lg font-bold leading-tight text-yellow-500">{CLUB_NAME}</div>
-            <div className="text-xs text-white/70">{TAGLINE}</div>
+    <>
+      {/* Barre du haut */}
+      <header className="sticky top-0 z-50 w-full border-b border-red-800 bg-black text-white">
+        <Container className="flex items-center justify-between py-3">
+          <Link to="/" className="flex items-center gap-3" onClick={close}>
+            <img src="/Logo.jpeg" alt="Logo L'Only-Us" className="h-10 w-auto" />
+            <div>
+              <div className="text-lg font-bold leading-tight text-yellow-500">L'Only-Us</div>
+              <div className="text-xs text-white/70">Club libertin – Alès</div>
+            </div>
+          </Link>
+
+          {/* Liens desktop */}
+          <nav className="hidden md:flex items-center gap-2">
+            <NavLink to="/agenda" className={navLink}><CalendarIcon className="mr-2 inline h-4 w-4" />Agenda</NavLink>
+            <NavLink to="/club" className={navLink}><Info className="mr-2 inline h-4 w-4" />Présentation</NavLink>
+            <NavLink to="/galerie" className={navLink}><Camera className="mr-2 inline h-4 w-4" />Photos</NavLink>
+            <NavLink to="/infos" className={navLink}><MapPin className="mr-2 inline h-4 w-4" />Infos</NavLink>
+          </nav>
+
+          {/* Bouton hamburger (mobile) */}
+          <button
+            className="md:hidden inline-flex items-center justify-center rounded-full border border-red-700 p-2"
+            onClick={() => setOpen(true)}
+            aria-label="Ouvrir le menu"
+            aria-expanded={open}
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        </Container>
+      </header>
+
+      {/* Overlay + panneau coulissant (mobile) */}
+      {open && (
+        <>
+          {/* Fond sombre cliquable */}
+          <div
+            className="fixed inset-0 z-[60] bg-black/70"
+            onClick={close}
+            aria-hidden="true"
+          />
+          {/* Panneau */}
+          <div
+            className="fixed top-0 right-0 z-[70] h-full w-80 max-w-[85%] bg-black border-l border-red-800 shadow-xl"
+            role="dialog"
+            aria-modal="true"
+          >
+            <div className="flex items-center justify-between p-4 border-b border-red-800">
+              <div className="flex items-center gap-2">
+                <img src="/Logo.jpeg" alt="Logo" className="h-8 w-auto" />
+                <span className="text-yellow-500 font-semibold">Menu</span>
+              </div>
+              <button
+                className="rounded-full border border-red-700 px-3 py-1"
+                onClick={close}
+                aria-label="Fermer le menu"
+              >
+                Fermer
+              </button>
+            </div>
+
+            <nav className="p-3 text-white">
+              <NavLink to="/agenda" onClick={close} className="block rounded-xl px-3 py-3 hover:bg-red-800/30">
+                Agenda
+              </NavLink>
+              <NavLink to="/club" onClick={close} className="block rounded-xl px-3 py-3 hover:bg-red-800/30">
+                Présentation
+              </NavLink>
+              <NavLink to="/galerie" onClick={close} className="block rounded-xl px-3 py-3 hover:bg-red-800/30">
+                Photos
+              </NavLink>
+              <NavLink to="/infos" onClick={close} className="block rounded-xl px-3 py-3 hover:bg-red-800/30">
+                Infos
+              </NavLink>
+
+              <div className="mt-4 grid grid-cols-2 gap-2">
+                <a href="https://www.instagram.com/lonlyusclub/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl border border-red-700/60 px-3 py-2 text-sm text-red-400 hover:bg-red-700 hover:text-white transition">
+                  <Instagram className="h-4 w-4" /> Insta
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61579129558554" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl border border-red-700/60 px-3 py-2 text-sm text-red-400 hover:bg-red-700 hover:text-white transition">
+                  <Facebook className="h-4 w-4" /> Facebook
+                </a>
+              </div>
+
+              <div className="mt-4 text-sm text-white/80">
+                <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-red-500" /> <a href="tel:0610392937">06 10 39 29 37</a></div>
+                <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-red-500" /> <a href="mailto:contact@lonlyusclub.fr">contact@lonlyusclub.fr</a></div>
+              </div>
+            </nav>
           </div>
-        </Link>
-        <nav className="hidden md:flex items-center gap-2">
-          <NavLink to="/agenda" className={navLink}><CalendarIcon className="mr-2 inline h-4 w-4"/>Agenda</NavLink>
-          <NavLink to="/club"   className={navLink}><Info className="mr-2 inline h-4 w-4"/>Présentation</NavLink>
-          <NavLink to="/galerie"className={navLink}><Camera className="mr-2 inline h-4 w-4"/>Photos</NavLink>
-          <NavLink to="/infos"  className={navLink}><MapPin className="mr-2 inline h-4 w-4"/>Infos</NavLink>
-        </nav>
-        <button className="md:hidden rounded-full border border-red-700 p-2" onClick={() => setOpen(v=>!v)} aria-label="Menu">
-          <Menu className="h-5 w-5" />
-        </button>
-      </Container>
-    </header>
+        </>
+      )}
+    </>
   );
 }
+
 function Footer() {
   return (
     <footer className="border-t border-red-800 py-10 bg-black">
