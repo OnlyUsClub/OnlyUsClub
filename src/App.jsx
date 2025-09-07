@@ -357,7 +357,7 @@ function Home(){return <Section className="bg-black">
       Bienvenue à l’Only-Us
     </h1>
     <p class="text-lg sm:text-xl max-w-2xl mx-auto text-white/90">
-      ✨ Bienvenue à l’Only-Us, un lieu unique où l’élégance rencontre la sensualité.<br/>
+      ✨ Un lieu unique où l’élégance rencontre la sensualité.<br/>
       Ici, chacun est invité à vivre des instants intenses dans une ambiance raffinée, conviviale et respectueuse.
     </p>
   </div>
