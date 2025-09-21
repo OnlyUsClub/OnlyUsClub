@@ -39,7 +39,7 @@ const EVENTS = [
   { title: "Soirée Ibiza", date: "2025-09-10", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 10 oct ibiza.png" },
   { title: "Soirée Topless", date: "2025-09-17", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 10 oct ibiza.png" },
   { title: "Soirée Full Black", date: "2025-09-24", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 24 oct black.png" },
-  { title: "Soirée d'Halloween", date: "2025-09-31", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 31 octo halloween.png" },
+  { title: "Soirée d'Halloween", date: "2025-09-31", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 31 oct halloween.png" },
 
   // SAMEDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-09-27", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
