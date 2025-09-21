@@ -420,7 +420,23 @@ function Club(){return <Section title="Présentation du club" icon={Info} classN
     <li><strong>Espace balnéo</strong> — jacuzzis, sauna, hammam pour se détendre.</li>
     <li><strong>Coins câlins</strong> — espaces confortables, discrets et entretenus.</li>
   </ul></p></Section>;}
-function Galerie(){return <Section title="Galerie" icon={Camera} className="bg-black"><p className="text-white/80">Ajoute tes images ici.</p></Section>;}
+function Galerie(){
+    const images = [
+    "/posters/Vendredi AM1.png",
+    "/posters/Samedi AM1.png",
+    "/posters/Lundi AM.png",
+    // ajoute ici toutes les images que tu veux afficher
+  ];
+
+  return (
+    <Section title="Galerie" icon={Camera} className="bg-black">
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {images.map((src, index) => (
+          <div key={index} className="overflow-hidden rounded-xl border border-red-800">
+            <img src={src} alt={`Galerie ${index + 1}`} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div></Section>;}
 function Infos(){return <Section title="Infos pratiques" icon={MapPin} className="bg-black"><p className="text-white/80">{ADDRESS} • {PHONE_NUMBER} • {EMAIL}</p></Section>;}
 
 // === App Root ===
