@@ -431,9 +431,18 @@ function Club() {
 
 function Galerie() {
   const images = [
-    "/posters/Vendredi AM1.png",
-    "/posters/Samedi AM1.png",
-    "/posters/Lundi AM.png",
+    "/posters/entree 1.jpg",
+    "/posters/bar 1.jpg",
+    "/posters/bar 2.jpg",
+    "/posters/balneo 6.jpg",
+    "/posters/balneo 5.jpg",
+    "/posters/balneo 11.jpg",
+    "/posters/balneo 10.jpg",
+    "/posters/balneo 7.jpg",
+    "/posters/balneo 1.jpg",
+    "/posters/balneo 2.jpg",
+    "/posters/balneo 8.jpg",
+    "/posters/balneo 9.jpg",
     // ajoute ici toutes les images que tu veux afficher
   ];
 
