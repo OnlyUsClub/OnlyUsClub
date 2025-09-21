@@ -24,6 +24,15 @@ const SOCIALS = [
    ========================================================= */
 const EVENTS = [
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
+ 
+  // Vendredi (Aprem)
+  { title: "Journée coquine", date: "2025-09-26", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Journée coquine", date: "2025-10-03", time: "14:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Journée coquine", date: "2025-10-10", time: "14:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Journée coquine", date: "2025-10-17", time: "14:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Journée coquine", date: "2025-10-24", time: "14:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Journée coquine", date: "2025-10-31", time: "14:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+ 
   // VENDREDIS (20:00 → 01:00)
   { title: "Soirée Lounge",   date: "2025-09-05", time: "20:00", theme: "Lounge",   poster: "/posters/Vendredi 5 Lounge.png" },
   { title: "Pink Party",      date: "2025-09-12", time: "20:00", theme: "Pink",     poster: "/posters/Vendredi 12 rose.png" },
@@ -36,19 +45,37 @@ const EVENTS = [
   { title: "Topless & Tantrique – Massages par Lianna & Vincent", date: "2025-09-20", time: "20:00", theme: "Massage & Tantrique", poster: "/posters/Samedi 20 massage.png" },
   { title: "Soirée Uniforme",                date: "2025-09-27", time: "20:00", theme: "Uniforme",      poster: "/posters/Samedi 27 Uniforme.png" },
 
-  // LUNDIS (AM 14:00 → 19:00 / Soir 20:30 → 01:00)
+  // LUNDIS (Aprem)
   { title: "Après-midi Coquines", date: "2025-09-22", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
-  { title: "Soirées Coquines",    date: "2025-09-22", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
   { title: "Après-midi Coquines", date: "2025-09-29", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM.png" },
+  { title: "Après-midi Coquines", date: "2025-10-06", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-13", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-20", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-27", time: "14:00", theme: "Après-midi", poster: "/posters/Lundi AM1.png" },
+  // LUNDIS (Soir)
+  { title: "Soirées Coquines",    date: "2025-09-22", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
   { title: "Soirées Coquines",    date: "2025-09-29", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir.png" },
+  { title: "Soirées Coquines",    date: "2025-10-06", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-13", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-20", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-27", time: "20:30", theme: "Soirée",     poster: "/posters/Lundi Soir1.png" },
 
-  // MARDIS
+  // MARDIS (Aprem)
   { title: "Après-midi Coquines", date: "2025-09-23", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
-  { title: "Soirées Coquines",    date: "2025-09-23", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
   { title: "Après-midi Coquines", date: "2025-09-30", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
+  { title: "Après-midi Coquines", date: "2025-10-07", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-14", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-21", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM1.png" },
+  { title: "Après-midi Coquines", date: "2025-10-28", time: "14:00", theme: "Après-midi", poster: "/posters/Mardi AM1.png" },
+  // MARDIS (Soir)
+  { title: "Soirées Coquines",    date: "2025-09-23", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
   { title: "Soirées Coquines",    date: "2025-09-30", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir.png" },
+  { title: "Soirées Coquines",    date: "2025-10-07", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-14", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-21", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir1.png" },
+  { title: "Soirées Coquines",    date: "2025-10-28", time: "20:30", theme: "Soirée",     poster: "/posters/Mardi Soir1.png" },
 
-    // MERCREDIS (Aprem)
+  // MERCREDIS (Aprem)
   { title: "Soirées Coquines", date: "2025-09-24", time: "14:00", theme: "Après-midi", poster: "/posters/Mercredi AM.png" },
   { title: "Soirées Coquines", date: "2025-10-01", time: "14:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
   { title: "Soirées Coquines", date: "2025-10-08", time: "14:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
@@ -78,6 +105,7 @@ const EVENTS = [
   { title: "Soirées Coquines",    date: "2025-10-23", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir1.png" },
   { title: "Soirées Coquines",    date: "2025-10-30", time: "20:30", theme: "Soirée",     poster: "/posters/Jeudi Soir1.png" },
 
+  
   // DIMANCHES (Soir)
   { title: "Journée coquine", date: "2025-09-21", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
   { title: "Journée coquine", date: "2025-09-28", time: "14:00", theme: "Journée", poster: "/posters/Dimanche Soir.png" },
