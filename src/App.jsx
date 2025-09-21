@@ -46,7 +46,7 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-10-04", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-11", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-18", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
-  { title: "Après-midi Gang-Bang", date: "2025-10-18", time: "14:00-16:00", theme: "Sexy", poster: "/posters/Samedi 18 oct glory.png" },
+  { title: "Après-midi Gang-Bang", date: "2025-10-18", time: "14:00-16:00", theme: "Sexy", poster: "/posters/Samedi 18 oct glory.jpeg" },
   { title: "Après-midi Coquine", date: "2025-10-25", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-11-01", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   
@@ -89,7 +89,7 @@ const EVENTS = [
   { title: "Soirée Coquine",    date: "2025-10-28", time: "20:30-01:00", theme: "Soirée",     poster: "/posters/Mardi Soir1.png" },
 
   // MERCREDIS (Aprem)
-  { title: "Soirée Coquine", date: "2025-09-24", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mercredi AM.png" },
+  { title: "Soirée Coquine", date: "2025-09-24", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
   { title: "Soirée Coquine", date: "2025-10-01", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
   { title: "Soirée Coquine", date: "2025-10-08", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
   { title: "Soirée Coquine", date: "2025-10-15", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mercredi AM1.png" },
