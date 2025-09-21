@@ -407,21 +407,30 @@ function Home(){return <Section className="bg-black">
     </p>
   </div>
 </section></Container></Section>;}
-function Club(){return <Section title="Présentation du club" icon={Info} className="bg-black"><p className="text-white/80">
-    Situé à Alès, l’Only-Us est un club libertin
-    <strong>pensé pour tous ceux qui souhaitent partager des instants de plaisir</strong>
-    dans un cadre <strong>élégant, sensuel et respectueux</strong>.
-  </p>
+function Club() {
+  return (
+    <Section title="Présentation du club" icon={Info} className="bg-black">
+      <div className="text-white/80">
+        <p>
+          Situé à Alès, l’Only-Us est un club libertin
+          <strong> pensé pour tous ceux qui souhaitent partager des instants de plaisir</strong>
+          dans un cadre <strong>élégant, sensuel et respectueux</strong>.
+        </p>
 
-  <h3>Ce que vous trouverez:</h3>
-  <ul>
-    <li><strong>Piste de danse</strong> — soirées à thème et ambiance musicale.</li>
-     <li><strong>Bar & tapas</strong> — cocktails et petites faims (selon soirées).</li>
-    <li><strong>Espace balnéo</strong> — jacuzzis, sauna, hammam pour se détendre.</li>
-    <li><strong>Coins câlins</strong> — espaces confortables, discrets et entretenus.</li>
-  </ul></p></Section>;}
-function Galerie(){
-    const images = [
+        <h3>Ce que vous trouverez:</h3>
+        <ul>
+          <li><strong>Piste de danse</strong> — soirées à thème et ambiance musicale.</li>
+          <li><strong>Bar & tapas</strong> — cocktails et petites faims (selon soirées).</li>
+          <li><strong>Espace balnéo</strong> — jacuzzis, sauna, hammam pour se détendre.</li>
+          <li><strong>Coins câlins</strong> — espaces confortables, discrets et entretenus.</li>
+        </ul>
+      </div>
+    </Section>
+  );
+}
+
+function Galerie() {
+  const images = [
     "/posters/Vendredi AM1.png",
     "/posters/Samedi AM1.png",
     "/posters/Lundi AM.png",
@@ -436,7 +445,11 @@ function Galerie(){
             <img src={src} alt={`Galerie ${index + 1}`} className="w-full h-full object-cover" />
           </div>
         ))}
-      </div></Section>;}
+      </div>
+    </Section>
+  );
+}
+
 function Infos(){return <Section title="Infos pratiques" icon={MapPin} className="bg-black"><p className="text-white/80">{ADDRESS} • {PHONE_NUMBER} • {EMAIL}</p></Section>;}
 
 // === App Root ===
