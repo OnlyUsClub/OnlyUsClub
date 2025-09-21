@@ -332,7 +332,7 @@ function Footer() {
         </div>
       </Container>
 <Container>
-  <div className="mt-10 border-t border-red-800 pt-6 text-xs text-white/60 text-center">
+  <div className="mt-10 border-t border-red-800 pt-6 text-xs text-white/60 w-full text-center">
     © {new Date().getFullYear()} {CLUB_NAME}. Tous droits réservés. Entrée réservée aux personnes majeures.
   </div>
 </Container>
