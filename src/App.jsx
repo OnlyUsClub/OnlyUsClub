@@ -407,7 +407,7 @@ function Home(){return <Section className="bg-black">
     </p>
   </div>
 </section></Container></Section>;}
-function Club(){return <Section title="Présentation du club" icon={Info} className="bg-black"><p className="text-white/80"> <p>
+function Club(){return <Section title="Présentation du club" icon={Info} className="bg-black"><p className="text-white/80">
     Situé à Alès, l’Only-Us est un club libertin
     <strong>pensé pour tous ceux qui souhaitent partager des instants de plaisir</strong>
     dans un cadre <strong>élégant, sensuel et respectueux</strong>.
