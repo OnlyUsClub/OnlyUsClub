@@ -30,9 +30,9 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   // VENDREDIS (Soir)
-  { title: "Soirée Dentelle", date: "2025-12-05", time: "20:00-01:00", theme: "Dentelle", poster: "/posters/Vendredi 26 Dentelle.png" },
-  { title: "Soirée Bleue", date: "2025-12-12", time: "20:00-01:00", theme: "Bleu", poster: "/posters/Vendredi 3 oct bleu.png" },
-  { title: "Soirée Ibiza", date: "2025-12-19", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 10 oct ibiza.png" },
+  { title: "Soirée Dentelle", date: "2025-12-01", time: "20:00-01:00", theme: "Dentelle", poster: "/posters/Vendredi 26 Dentelle.png" },
+  { title: "Soirée Bleue", date: "2025-12-01", time: "20:00-01:00", theme: "Bleu", poster: "/posters/Vendredi 3 oct bleu.png" },
+  { title: "Soirée Ibiza", date: "2025-12-01", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 10 oct ibiza.png" },
 
   // SAMEDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-06", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
@@ -40,10 +40,10 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-12-26", time: "14:00-19:00", theme: "Sexy", poster: "/posters/Samedi AM1.png" },
   // SAMEDIS (Soir)
-  { title: "Soirée Uniforme", date: "2025-12-06", time: "20:00-02:00", theme: "Uniforme", poster: "/posters/Samedi 27 Uniforme.png" },
-  { title: "Soirée Triple xXx", date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 4 oct xxx.png" },
-  { title: "Soirée Cadeau!", date: "2025-12-20", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 11 oct Kdo.png" },
-  { title: "Soirée Disco", date: "2025-12-26", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 18 oct disco.png" },
+  { title: "Soirée Uniforme", date: "2025-12-01", time: "20:00-02:00", theme: "Uniforme", poster: "/posters/Samedi 27 Uniforme.png" },
+  { title: "Soirée Triple xXx", date: "2025-12-01", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 4 oct xxx.png" },
+  { title: "Soirée Cadeau!", date: "2025-12-01", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 11 oct Kdo.png" },
+  { title: "Soirée Disco", date: "2025-12-01", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 18 oct disco.png" },
 
   // MARDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Mardi AM.png" },
