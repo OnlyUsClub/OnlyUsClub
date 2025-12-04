@@ -26,7 +26,7 @@ const EVENTS = [
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
  
   // Vendredi (Aprem)
-  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/posters/Dimanche.png" },
+  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/public/Dimanche.png" },
   { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   // VENDREDIS (Soir)
@@ -67,9 +67,9 @@ const EVENTS = [
 
 
   // JEUDIS APREM
-  { title: "Après-midi Coquine", date: "2025-09-25", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
-  { title: "Après-midi Coquine", date: "2025-10-02", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
-  { title: "Après-midi Coquine", date: "2025-10-09", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
+  { title: "Après-midi Coquine", date: "2025-12-04", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM.png" },
+  { title: "Après-midi Coquine", date: "2025-12-11", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
+  { title: "Après-midi Coquine", date: "2025-12-18", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-16", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-23", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-30", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
