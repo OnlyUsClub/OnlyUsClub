@@ -77,7 +77,7 @@ const EVENTS = [
   // JEUDIS SOIR
   { title: "Soirée Coquine",    date: "2025-12-04", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-11", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
-  { title: "Soirée Coquine",    date: "2025-12-18", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2025-12-04", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
 
   
   // DIMANCHES (Soir)
