@@ -67,7 +67,7 @@ const EVENTS = [
 
 
   // JEUDIS APREM
-  { title: "Après-midi Coquine", date: "2025-12-04", time: "14:00-19:00", theme: "Après-midi", poster: "/public/posters/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-04", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-11", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-12-18", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-10-16", time: "14:00-19:00", theme: "Après-midi", poster: "/posters/Jeudi AM1.png" },
