@@ -26,7 +26,7 @@ const EVENTS = [
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
  
   // Vendredi (Aprem)
-  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
+  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/posters/Dimanche.png" },
   { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/posters/Vendredi AM1.png" },
   // VENDREDIS (Soir)
