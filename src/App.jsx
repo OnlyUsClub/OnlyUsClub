@@ -32,18 +32,19 @@ const EVENTS = [
   // VENDREDIS (Soir)
   { title: "Soirée Jarretelles", date: "2025-12-05", time: "20:00-01:00", theme: "Dentelle", poster: "/Copie de PORTE-JARRETELLES (1).png" },
   { title: "Soirée Nude", date: "2025-12-12", time: "20:00-01:00", theme: "Bleu", poster: "/nude (1).png" },
-  { title: "Soirée Ibiza", date: "2025-12-19", time: "20:00-01:00", theme: "ibiza", poster: "/posters/Vendredi 10 oct ibiza.png" },
+  { title: "Soirée Père Noël le vendredi 19 decembre", date: "2025-12-19", time: "20:00-01:00", theme: "ibiza", poster: "/Père Noël le vendredi 19 decembre (1).pngg" },
+  { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Bleu", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
 
   // SAMEDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-06", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-26", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
   { title: "Soirée Black And Yellow", date: "2025-12-06", time: "20:00-02:00", theme: "Uniforme", poster: "/black and yellow (2).png" },
   { title: "Soirée Cadeau", date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/Copie de cadeau 13 ddécembre.png" },
-  { title: "Soirée Cadeau!", date: "2025-12-20", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 11 oct Kdo.png" },
-  { title: "Soirée Disco", date: "2025-12-26", time: "20:00-02:00", theme: "Sexy", poster: "/posters/Samedi 18 oct disco.png" },
+  { title: "Soirée Mère Noël samedi 20 decembre", date: "2025-12-20", time: "20:00-02:00", theme: "Sexy", poster: "/Mère Noël samedi 20 decembre (1).png" },
+  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-02:00", theme: "Sexy", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
 
   // MARDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
