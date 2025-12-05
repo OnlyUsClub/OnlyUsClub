@@ -26,12 +26,12 @@ const EVENTS = [
   { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
  
   // Vendredi (Aprem)
- 
+  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   // VENDREDIS (Soir)
   { title: "Soirée Jarretelles",                                       date: "2025-12-05", time: "20:00-01:00", theme: "Jarretelles", poster: "/Copie de PORTE-JARRETELLES (1).png" },
-  { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
+  { title: "Soirée Nude",                                              date: "2025-12-05", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
   { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
   { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
 
