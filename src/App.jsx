@@ -32,7 +32,7 @@ const EVENTS = [
   // VENDREDIS (Soir)
   { title: "Soirée Jarretelles",                                       date: "2025-12-05", time: "20:00-01:00", theme: "Jarretelles", poster: "/Copie de PORTE-JARRETELLES (1).png" },
   { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
-  { title: "Soirée Père Noël le vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël le vendredi 19 decembre (1).pngg" },
+  { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
   { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
 
   // SAMEDIS (Aprem)
@@ -42,7 +42,7 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
   { title: "Soirée Black And Yellow",                            date: "2025-12-06", time: "20:00-02:00", theme: "Black and yellow", poster: "/black and yellow (2).png" },
-  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/Copie de cadeau 13 ddécembre.png" },
+  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
   { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-02:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
   { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-02:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
 
