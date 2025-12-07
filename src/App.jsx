@@ -101,7 +101,7 @@ const EVENTS = [
    - Ven/Sam/Dim soir : couples 30€ • 2 consos, hommes 50€ • 2 consos
    ========================================================= */
 function getPricing(dt, timeStr) {
-  const d = new Date(dt);                 // 0=Dim … 6=Sam
+  const d = new Date(dt);           // 0=Dim … 6=Sam
   if (isNaN(d.getTime())) {
     throw new Error("Date invalide");
   }
@@ -120,18 +120,20 @@ function getPricing(dt, timeStr) {
     men: "",
   };
 
-  // ✅ Après-midi lun → sam
+  // ✅ APRÈS-MIDI : lundi → samedi
   if (isAfternoon && weekday >= 1 && weekday <= 6) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 30€";
-  } 
-  // ✅ Soirées semaine (lun → jeu)
+  }
+
+  // ✅ SOIRÉES SEMAINE : lundi → jeudi
   else if (weekday >= 1 && weekday <= 4) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 35€";
-  } 
-  // ✅ Soirées week-end (ven + sam + dim)
-  else { // weekday === 5 || weekday === 6 || weekday === 0
+  }
+
+  // ✅ SOIRÉES WEEK-END : vendredi + samedi + dimanche
+  else { // 5 = ven, 6 = sam, 0 = dim
     res.couples = "Couples : 30€ • 2 consos";
     res.men     = "Hommes seuls : 50€ • 2 consos";
   }
