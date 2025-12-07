@@ -81,10 +81,10 @@ const EVENTS = [
 
   
   // DIMANCHES (Soir)
-  { title: "Journée coquine", date: "2025-12-07", time: "14:00-19:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2025-12-14", time: "14:00-19:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2025-12-21", time: "14:00-19:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2025-12-28", time: "14:00-19:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2025-12-07", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2025-12-14", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2025-12-21", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2025-12-28", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
 
 
 
