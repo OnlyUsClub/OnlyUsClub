@@ -314,23 +314,70 @@ function Footer() {
   );
 }
 
-// === Pages ===
-const upcoming = useMemo(() => {
-  const now = new Date();
+// === Page Agenda ===
+function Agenda() {
+  const upcoming = useMemo(() => {
+    const now = new Date();
 
-  return EVENTS
-    .map((e) => {
-      const [y, m, d] = e.date.split("-");
-      const [h, min] = (e.time || "20:00").split(":");
+    return EVENTS
+      .map((e) => {
+        const [y, m, d] = e.date.split("-");
+        const [h, min] = (e.time || "20:00").split(":");
 
-      return {
-        ...e,
-        dt: new Date(y, m - 1, d, h, min),
-      };
-    })
-    .filter((e) => e.dt > now) // ✅ aujourd'hui inclus si encore à venir
-    .sort((a, b) => a.dt - b.dt);
-}, [EVENTS]);
+        return {
+          ...e,
+          dt: new Date(y, m - 1, d, h, min),
+        };
+      })
+      .filter((e) => e.dt > now) // ✅ aujourd'hui inclus si encore à venir
+      .sort((a, b) => a.dt - b.dt);
+  }, []);
+
+  return (
+    <Section title="Agenda" icon={CalendarIcon} className="bg-black">
+      {upcoming.length === 0 ? (
+        <div className="rounded-2xl border border-red-800 p-6 text-sm text-white/80 bg-black/60">
+          Aucun événement à venir n'est publié pour le moment.
+        </div>
+      ) : (
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {upcoming.map((e) => {
+            const pricing = getPricing(e.dt, e.time);
+            return (
+              <li key={`${e.date}-${e.title}`} className="rounded-2xl overflow-hidden border border-red-800 bg-black">
+                <div className="aspect-[4/5] w-full bg-red-950/20">
+                  {e.poster ? (
+                    <img src={e.poster} alt={`Affiche ${e.title}`} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="h-full w-full grid place-items-center text-red-400">{e.title}</div>
+                  )}
+                </div>
+                <div className="p-4">
+                  <div className="text-base font-bold text-yellow-500">{e.title}</div>
+                  <div className="mt-1 text-sm text-red-400">
+                    {new Date(e.date).toLocaleDateString("fr-FR", {
+                      weekday: "long",
+                      day: "numeric",
+                      month: "long",
+                    })}{" "}
+                    • {e.time}
+                    {e.theme ? ` • ${e.theme}` : ""}
+                  </div>
+
+                  <div className="mt-3 rounded-xl border border-red-800 p-3 bg-black/60">
+                    <div className="text-xs text-white/80">{pricing.women}</div>
+                    <div className="mt-1 text-sm text-yellow-500">{pricing.couples}</div>
+                    <div className="text-sm text-red-400">{pricing.men}</div>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </Section>
+  );
+}
 
 
   return (
