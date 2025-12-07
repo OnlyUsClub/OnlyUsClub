@@ -57,7 +57,7 @@ const EVENTS = [
 
 
   // MERCREDIS (Aprem)
-  { title: "Soirée Coquine", date: "2025-12-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+  { title: "Soirée Coquine", date: "2025-12-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem Gang Bang.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2025-12-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
  
