@@ -36,10 +36,10 @@ const EVENTS = [
   { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
 
   // SAMEDIS (Aprem)
-  { title: "Après-midi Coquine", date: "2025-12-06", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Sexy", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-06", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
   { title: "Soirée Black And Yellow",                            date: "2025-12-06", time: "20:00-02:00", theme: "Black and yellow", poster: "/black and yellow (2).png" },
   { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
