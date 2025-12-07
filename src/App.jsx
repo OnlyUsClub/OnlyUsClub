@@ -102,8 +102,16 @@ const EVENTS = [
    ========================================================= */
 function getPricing(dt, timeStr) {
   const d = new Date(dt);                 // 0=Dim … 6=Sam
+  if (isNaN(d.getTime())) {
+    throw new Error("Date invalide");
+  }
+
   const weekday = d.getDay();
-  const hour = Number((timeStr || "20:00").split(":")[0]);
+  const hour = parseInt((timeStr || "20:00").split(":")[0], 10);
+  if (isNaN(hour)) {
+    throw new Error("Heure invalide");
+  }
+
   const isAfternoon = hour < 18;
 
   const res = {
@@ -112,18 +120,22 @@ function getPricing(dt, timeStr) {
     men: "",
   };
 
+  // ✅ Après-midi lun → sam
   if (isAfternoon && weekday >= 1 && weekday <= 6) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 30€";
-  } else {
-    if (weekday >= 1 && weekday <= 4) {   // Lun→Jeu
-      res.couples = "Couples : 25€";
-      res.men     = "Hommes seuls : 35€";
-    } else {                              // Ven / Sam / Dim
-      res.couples = "Couples : 30€ • 2 consos";
-      res.men     = "Hommes seuls : 50€ • 2 consos";
-    }
+  } 
+  // ✅ Soirées semaine (lun → jeu)
+  else if (weekday >= 1 && weekday <= 4) {
+    res.couples = "Couples : 25€";
+    res.men     = "Hommes seuls : 35€";
+  } 
+  // ✅ Soirées week-end (ven + sam + dim)
+  else { // weekday === 5 || weekday === 6 || weekday === 0
+    res.couples = "Couples : 30€ • 2 consos";
+    res.men     = "Hommes seuls : 50€ • 2 consos";
   }
+
   return res;
 }
 
