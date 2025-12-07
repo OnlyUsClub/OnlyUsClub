@@ -372,7 +372,8 @@ const upcoming = useMemo(() => {
       )}
     </Section>
   );
-}
+
+
 function Home(){return <Section className="bg-black">
   <Container>
   <section className="relative bg-black text-center text-white">
