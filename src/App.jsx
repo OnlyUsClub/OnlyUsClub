@@ -333,14 +333,14 @@ function Footer() {
 
 // === Pages ===
 function Agenda() {
-  // → NE GARDE QUE LES ÉVÉNEMENTS STRICTEMENT FUTURS (passe + aujourd’hui exclus)
+  // → NE GARDE QUE LES ÉVÉNEMENTS STRICTEMENT FUTURS
   const upcoming = useMemo(() => {
     const now = new Date();
-return EVENTS
-  .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
-  .filter((e) => e.dt > now)   // garde aussi ce soir
-  .sort((a, b) => a.dt - b.dt);
-
+    return EVENTS
+      .map((e) => ({ ...e, dt: new Date(`${e.date}T${e.time || "20:00"}`) }))
+      .filter((e) => e.dt > now)
+      .sort((a, b) => a.dt - b.dt);
+  }, []); // ← ICI aussi ajout important : fermeture + dépendances
 
   return (
     <Section title="Agenda" icon={CalendarIcon} className="bg-black">
@@ -382,6 +382,7 @@ return EVENTS
     </Section>
   );
 }
+
 
 function Home() {
   return (
