@@ -23,7 +23,6 @@ const SOCIALS = [
    - Ajoute / supprime librement des lignes ci-dessous.
    ========================================================= */
 const EVENTS = [
-  { title: "Les heures suspendues", date: "2025-08-31", time: "20:00", theme: "Slow & sensual", description: "Instants suspendus en musique.", poster: "/posters/2025-08-31-heures-suspenses.png" },
  
   // Vendredi (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
@@ -100,6 +99,7 @@ const EVENTS = [
    - Soirées lun→jeu : couples 25€, hommes 35€
    - Ven/Sam/Dim soir : couples 30€ • 2 consos, hommes 50€ • 2 consos
    ========================================================= */
+
 function getPricing(dt, timeStr) {
   const d = new Date(dt);                 // 0=Dim … 6=Sam
   const weekday = d.getDay();
@@ -112,20 +112,33 @@ function getPricing(dt, timeStr) {
     men: "",
   };
 
-  if (isAfternoon && weekday >= 1 && weekday <= 6) {
+  // ⭐ RÈGLE SPÉCIALE : samedi après-midi
+  if (weekday === 6 && isAfternoon) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 30€";
-  } else {
-    if (weekday >= 1 && weekday <= 4) {   // Lun→Jeu
-      res.couples = "Couples : 25€";
-      res.men     = "Hommes seuls : 35€";
-    } else {                              // Ven / Sam / Dim
-      res.couples = "Couples : 30€ • 2 consos";
-      res.men     = "Hommes seuls : 50€ • 2 consos";
-    }
   }
+
+  // ⭐ Après-midi du lundi au vendredi
+  else if (isAfternoon && weekday >= 1 && weekday <= 5) {
+    res.couples = "Couples : 25€";
+    res.men     = "Hommes seuls : 30€";
+  }
+
+  // ⭐ Soir du lundi au jeudi
+  else if (!isAfternoon && weekday >= 1 && weekday <= 4) {
+    res.couples = "Couples : 25€";
+    res.men     = "Hommes seuls : 35€";
+  }
+
+  // ⭐ Vendredi soir, samedi soir et dimanche (jour + soir)
+  else {
+    res.couples = "Couples : 30€ • 2 consos";
+    res.men     = "Hommes seuls : 50€ • 2 consos";
+  }
+
   return res;
 }
+
 
 // === Petits helpers d’UI ===
 function Container({ children, className = "" }) {
