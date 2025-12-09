@@ -41,10 +41,10 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
-  { title: "Soirée Black And Yellow",                            date: "2025-12-06", time: "20:00-02:00", theme: "Black and yellow", poster: "/black and yellow (2).png" },
-  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-02:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
-  { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-02:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
-  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-02:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
+  { title: "Soirée Black And Yellow",                            date: "2025-12-06", time: "20:00-01:00", theme: "Black and yellow", poster: "/black and yellow (2).png" },
+  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
+  { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
+  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
 
   // MARDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
