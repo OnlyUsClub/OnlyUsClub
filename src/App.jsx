@@ -24,59 +24,78 @@ const SOCIALS = [
    ========================================================= */
 const EVENTS = [
  
-  // Vendredi (Aprem)
-  { title: "Après-midi Coquine", date: "2025-12-05", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  // VENDREDIS (Soir)
-  { title: "Soirée Jarretelles",                                       date: "2025-12-06", time: "20:00-01:00", theme: "Jarretelles", poster: "/Copie de PORTE-JARRETELLES (1).png" },
-  { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
-  { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
-  { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
-
-  // SAMEDIS (Aprem)
-  { title: "Après-midi Coquine", date: "2025-12-06", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  // SAMEDIS (Soir)
-  { title: "Soirée Black And Yellow",                            date: "2025-12-06", time: "20:00-01:00", theme: "Black and yellow", poster: "/black and yellow (2).png" },
-  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
-  { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
-  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
 
   // MARDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-16", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-30", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+   { title: "Après-midi Coquine", date: "2026-01-06", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+   { title: "Après-midi Coquine", date: "2026-01-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   // MARDIS (Soir)
   { title: "Soirée Coquine",    date: "2025-12-09", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-16", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-30", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+   { title: "Soirée Coquine",    date: "2026-01-06", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+   { title: "Soirée Coquine",    date: "2026-01-13", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
 
 
   // MERCREDIS (Aprem)
   { title: "Soirée Coquine", date: "2025-12-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem Gang Bang.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2025-12-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
- 
+   { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem Gang Bang.png" },
+  { title: "Soirée Coquine", date: "2026-01-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem Gang Bang.png" },
   // MERCREDIS (Soir)
   { title: "Soirée Coquine", date: "2025-12-10", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée du Réveillon", date: "2025-12-31", time: "20:30-05:00", theme: "Soirée", poster: "/posters/Reveillon.png.png" },
+  { title: "Soirée Coquine", date: "2026-01-07", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
+  { title: "Soirée Coquine", date: "2026-01-14", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
 
 
   // JEUDIS APREM
-  { title: "Après-midi Coquine", date: "2025-12-04", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-11", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-18", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-10-16", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
- 
-  
+  { title: "Après-midi Coquine", date: "2026-01-01", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-08", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-15", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   // JEUDIS SOIR
-  { title: "Soirée Coquine",    date: "2025-12-04", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-11", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
-  { title: "Soirée Coquine",    date: "2025-12-04", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2025-12-18", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-01-01", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-01-08", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-01-15", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  
+
+  
+    // Vendredi (Aprem)
+  { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-02", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-09", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-16", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  // VENDREDIS (Soir)
+  { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
+  { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
+  { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
+  { title: "Soirée", date: "2026-01-02", time: "14:00-19:00", theme: "Soirée", poster: "/Vendredi aprem.png" },
+  { title: "Soirée", date: "2026-01-09", time: "14:00-19:00", theme: "Soirée", poster: "/Vendredi aprem.png" },
+  { title: "Soirée", date: "2026-01-16", time: "14:00-19:00", theme: "Soirée", poster: "/Vendredi aprem.png" },
+
+    // SAMEDIS (Aprem)
+  { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-03", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  // SAMEDIS (Soir)
+  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
+  { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
+  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
+  { title: "Soirée", date: "2026-01-03", time: "20:00-01:00", theme: "Soirée", poster: "//" },
+  { title: "Soirée", date: "2026-01-10", time: "20:00-01:00", theme: "Soirée", poster: "//" },
+  { title: "Soirée", date: "2026-01-17", time: "20:00-01:00", theme: "Soirée", poster: "//" },
 
   
   // DIMANCHES (Soir)
@@ -84,6 +103,9 @@ const EVENTS = [
   { title: "Journée coquine", date: "2025-12-14", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2025-12-21", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2025-12-28", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-01-04", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-01-11", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-01-18", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
 
 
 
