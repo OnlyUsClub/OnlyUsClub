@@ -125,8 +125,17 @@ const EVENTS = [
 function getPricing(dt, timeStr) {
   const d = new Date(dt);
   const weekday = d.getDay(); // 0=Dim … 6=Sam
-  const hour = Number((timeStr || "20:00").split(":")[0]);
-  const isAfternoon = hour < 18;
+
+  // Extraire l'heure de début proprement, même si "14:00-19:00" ou "14h - 19h"
+  let raw = (timeStr || "20:00").split("-")[0];
+  raw = raw.replace(/[^\d]/g, ""); // garde seulement les chiffres
+
+  let hourStart = 20; // fallback
+  if (raw.length >= 2) {
+    hourStart = Number(raw.slice(0, 2));
+  }
+
+  const isAfternoon = hourStart < 18;
 
   const res = {
     women: "Femmes & personnes trans invitées",
@@ -141,18 +150,23 @@ function getPricing(dt, timeStr) {
     return res;
   }
 
-  // Après-midi lun→ven (hors samedi) 
+  // Après-midi lun→ven 
   if (isAfternoon && weekday >= 1 && weekday <= 5) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 30€";
-  } else if (weekday >= 1 && weekday <= 4) { // Soirée lun→jeu
-    res.couples = "Couples : 25€";
-    res.men     = "Hommes seuls : 35€";
-  } else { // Ven / Sam / Dim soir
-    res.couples = "Couples : 30€ • 2 consos";
-    res.men     = "Hommes seuls : 50€ • 2 consos";
+    return res;
   }
 
+  // Soirée lun→jeu
+  if (weekday >= 1 && weekday <= 4) {
+    res.couples = "Couples : 25€";
+    res.men     = "Hommes seuls : 35€";
+    return res;
+  }
+
+  // Ven / Sam / Dim soir
+  res.couples = "Couples : 30€ • 2 consos";
+  res.men     = "Hommes seuls : 50€ • 2 consos";
   return res;
 }
 
