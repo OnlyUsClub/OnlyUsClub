@@ -383,22 +383,33 @@ return EVENTS
   );
 }
 
-function Home(){return <Section className="bg-black">
-  <Container>
-  <section className="relative bg-black text-center text-white">
-    <img src="/posters/Coin calin.jpeg" alt="Entrée du club"
-      className="absolute inset-0 h-full w-full object-cover opacity-50"
+function Home() {
+  return (
+    <Section className="bg-black">
+      <Container>
+        <section className="relative bg-black text-center text-white">
+          <img
+            src="/posters/Coin calin.jpeg"
+            alt="Entrée du club"
+            className="absolute inset-0 h-full w-full object-cover opacity-50"
           />
-  <div class="relative z-10 py-32 px-4">
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-4">
-      Bienvenue à l’Only-Us
-    </h1>
-    <p class="text-lg sm:text-xl max-w-2xl mx-auto text-white/90">
-      ✨ Un lieu unique où l’élégance rencontre la sensualité.<br/>
-      Ici, chacun est invité à vivre des instants intenses dans une ambiance raffinée, conviviale et respectueuse.
-    </p>
-  </div>
-</section></Container></Section>;}
+
+          <div className="relative z-10 py-32 px-4">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-4">
+              Bienvenue à l’Only-Us
+            </h1>
+
+            <p className="text-lg sm:text-xl max-w-2xl mx-auto text-white/90">
+              ✨ Un lieu unique où l’élégance rencontre la sensualité.<br />
+              Ici, chacun est invité à vivre des instants intenses dans une ambiance raffinée, conviviale et respectueuse.
+            </p>
+          </div>
+        </section>
+      </Container>
+    </Section>
+  );
+}
+
 function Club() {
   return (
     <Section title="Présentation du club" icon={Info} className="bg-black">
