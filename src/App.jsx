@@ -146,14 +146,18 @@ function getPricing(dt, timeStr) {
   const weekday = d.getDay(); // 0=Dim … 6=Sam
 
 ///
-  const [startStr, endStr] = timeStr.split("-");
+ // --- Parsing début et fin ---
+const [startStr, endStr] = timeStr.split("-");
+
+// Crée l'objet Date pour le début
 const startDate = new Date(`${dateStr}T${startStr}`);
+
+// Crée l'objet Date pour la fin
 let endDate = new Date(`${dateStr}T${endStr}`);
 
-// Si endDate est avant startDate, on ajoute 1 jour
+// Si l'heure de fin est avant l'heure de début (événement qui passe minuit)
 if (endDate <= startDate) {
   endDate.setDate(endDate.getDate() + 1);
-}
 ///
 
   const isAfternoon = hourStart < 18;
