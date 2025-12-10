@@ -390,6 +390,20 @@ function Agenda() {
                     {new Date(e.date).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" })} • {e.time}{e.theme ? ` • ${e.theme}` : ""}
                   </div>
 
+
+{/* Réveillon */}
+{e.customPricing ? (
+  <div className="mt-3 rounded-xl border border-yellow-600 p-3 bg-black/60 text-center text-white/90">
+    {e.customPricing}
+  </div>
+) : (
+  <div className="mt-3 rounded-xl border border-red-800 p-3 bg-black/60">
+    <div className="text-xs text-white/80">{pricing.women}</div>
+    <div className="mt-1 text-sm text-yellow-500">{pricing.couples}</div>
+    <div className="text-sm text-red-400">{pricing.men}</div>
+  </div>
+)}
+                  
                   {/* Tarifs automatiques */}
                   <div className="mt-3 rounded-xl border border-red-800 p-3 bg-black/60">
                     <div className="text-xs text-white/80">{pricing.women}</div>
