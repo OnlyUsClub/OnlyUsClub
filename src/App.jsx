@@ -145,14 +145,16 @@ function getPricing(dt, timeStr) {
 
   const weekday = d.getDay(); // 0=Dim … 6=Sam
 
-  // --- Parsing horaire robuste ---
-  let raw = (timeStr || "20:00").split("-")[0];
-  raw = raw.replace(/[^\d]/g, "");
+///
+  const [startStr, endStr] = timeStr.split("-");
+const startDate = new Date(`${dateStr}T${startStr}`);
+let endDate = new Date(`${dateStr}T${endStr}`);
 
-  let hourStart = 20;
-  if (raw.length >= 2) {
-    hourStart = Number(raw.slice(0, 2));
-  }
+// Si endDate est avant startDate, on ajoute 1 jour
+if (endDate <= startDate) {
+  endDate.setDate(endDate.getDate() + 1);
+}
+///
 
   const isAfternoon = hourStart < 18;
 
