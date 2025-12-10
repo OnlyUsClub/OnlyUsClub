@@ -144,7 +144,7 @@ function getPricing(dt, timeStr) {
   };
 
   // Samedi après-midi
-  if (weekday === 6 && isAfternoon) {
+  if (isAfternoon && weekday === 6) {
     res.couples = "Couples : 25€";
     res.men     = "Hommes seuls : 30€";
     return res;
