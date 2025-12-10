@@ -23,6 +23,15 @@ const SOCIALS = [
    - Ajoute / supprime librement des lignes ci-dessous.
    ========================================================= */
 const EVENTS = [
+
+  {
+  title: "Soirée Réveillon",
+  date: "2025-12-31",
+  time: "20:00",
+  poster: "/public/posters/Reveillon.png",
+  customPricing: "Sur Réservation"
+}
+
  
 
   // MARDIS (Aprem)
