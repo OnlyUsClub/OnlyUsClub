@@ -146,22 +146,60 @@ function getPricing(dt, timeStr) {
   const weekday = d.getDay(); // 0=Dim … 6=Sam
 
 ///
-const now = new Date();
+import { useMemo } from "react";
 
-const upcomingEvents = EVENTS
-  .map(e => {
-    // On ne prend que l'heure de début
-    const [startStr] = e.time.split("-");
+const EVENTS = [
+  { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Soirée Détente", date: "2025-12-10", time: "20:00-23:00", theme: "Soirée", poster: "/Soiree.png" },
+];
 
-    // On combine date + heure de début
-    const startDate = new Date(`${e.date}T${startStr}`);
+function Agenda() {
+  const upcoming = useMemo(() => {
+    const now = new Date();
 
-    return { ...e, startDate };
-  })
-  // Ne garder que les événements futurs
-  .filter(e => e.startDate > now)
-  // Trier par date et heure de début
-  .sort((a, b) => a.startDate - b.startDate);
+    return EVENTS
+      .map(e => {
+        try {
+          // On ne prend que l'heure de début
+          const [startStr] = (e.time || "20:00-21:00").split("-");
+
+          // Crée un objet Date avec la date et l'heure de début
+          const startDate = new Date(`${e.date}T${startStr}`);
+
+          // Vérifie que la date est valide
+          if (isNaN(startDate.getTime())) {
+            console.error("Date invalide pour l'événement :", e);
+            return null;
+          }
+
+          return { ...e, startDate };
+        } catch (err) {
+          console.error("Erreur parsing événement :", e, err);
+          return null;
+        }
+      })
+      // On retire les événements invalides
+      .filter(e => e && e.startDate > now)
+      // Trie par date et heure de début
+      .sort((a, b) => a.startDate - b.startDate);
+
+  }, []);
+
+  return (
+    <div>
+      {upcoming.map(e => (
+        <div key={e.title}>
+          <h3>{e.title}</h3>
+          <p>{e.date} à {e.time.split("-")[0]}</p>
+          <img src={e.poster} alt={e.title} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default Agenda;
+
 
 ///
 
