@@ -147,22 +147,8 @@ function getPricing(dt, timeStr) {
 
 ///
 
-  const now = new Date();
-
-const upcomingEvents = EVENTS
-  .map(e => {
-    // On ne prend que l'heure de début
-    const [startStr] = e.time.split("-");
-
-    // On combine date + heure de début
-    const startDate = new Date(`${e.date}T${startStr}`);
-
-    return { ...e, startDate };
-  })
-  // Ne garder que les événements futurs
-  .filter(e => e.startDate > now)
-  // Trier par date et heure de début
-  .sort((a, b) => a.startDate - b.startDate);
+let raw = (timeStr || "20:00").split("-")[0]; raw = raw.replace(/[^\d]/g, ""); 
+  let hourStart = 20; if (raw.length >= 2) { hourStart = Number(raw.slice(0, 2)); }
 
 
 
