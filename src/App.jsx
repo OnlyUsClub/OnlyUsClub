@@ -90,8 +90,8 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2026-01-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
-  { title: "Soirée Cadeau",                                      date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
-  { title: "Soirée Mère Noël samedi 20 decembre",                date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
+  { title: "Soirée Cadeau", date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
+  { title: "Soirée Mère Noël samedi 20 decembre", date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
   { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
   { title: "Soirée Black Out", date: "2026-01-03", time: "20:00-01:00", theme: "Soirée", poster: "/samedi 3 janvier soirée black out (1).png" },
   { title: "Soirée Masquée", date: "2026-01-10", time: "20:00-01:00", theme: "Soirée", poster: "/samedi 10 janvier soirée bal masqué.png" },
