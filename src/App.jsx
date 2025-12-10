@@ -121,18 +121,35 @@ const EVENTS = [
    - Soirées lun→jeu : couples 25€, hommes 35€
    - Ven/Sam/Dim soir : couples 30€ • 2 consos, hommes 50€ • 2 consos
    ========================================================= */
-
 function getPricing(dt, timeStr) {
- const parts = dt.split("-").map(Number);
-const d = new Date(parts[0], parts[1] - 1, parts[2]); // Création locale
+  let d;
+
+  // Si dt est déjà une Date -> on garde
+  if (dt instanceof Date) {
+    d = dt;
+  }
+  // Si dt est une string "2025-01-11"
+  else if (typeof dt === "string") {
+    const parts = dt.split("-").map(Number);
+    if (parts.length >= 3) {
+      d = new Date(parts[0], parts[1] - 1, parts[2]);
+    } else {
+      // fallback si format inconnu
+      d = new Date(dt);
+    }
+  }
+  // Si dt est null/undefined/autre -> fallback
+  else {
+    d = new Date();
+  }
 
   const weekday = d.getDay(); // 0=Dim … 6=Sam
 
-  // Extraire l'heure de début proprement, même si "14:00-19:00" ou "14h - 19h"
+  // --- Parsing horaire robuste ---
   let raw = (timeStr || "20:00").split("-")[0];
-  raw = raw.replace(/[^\d]/g, ""); // garde seulement les chiffres
+  raw = raw.replace(/[^\d]/g, "");
 
-  let hourStart = 20; // fallback
+  let hourStart = 20;
   if (raw.length >= 2) {
     hourStart = Number(raw.slice(0, 2));
   }
