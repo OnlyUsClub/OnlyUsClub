@@ -123,7 +123,9 @@ const EVENTS = [
    ========================================================= */
 
 function getPricing(dt, timeStr) {
-  const d = new Date(dt);
+ const parts = dt.split("-").map(Number);
+const d = new Date(parts[0], parts[1] - 1, parts[2]); // Création locale
+
   const weekday = d.getDay(); // 0=Dim … 6=Sam
 
   // Extraire l'heure de début proprement, même si "14:00-19:00" ou "14h - 19h"
