@@ -48,7 +48,7 @@ const EVENTS = [
   // MERCREDIS (Soir)
   { title: "Soirée Coquine", date: "2025-12-10", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
-  { title: "Soirée du Réveillon", date: "2025-12-31", time: "20:30-05:00", theme: "Soirée", poster: "/posters/Reveillon.png" },
+  { title: "Soirée du Réveillon", date: "2025-12-31", time: "20:30-05:00", theme: "Soirée", poster: "/posters/réveillon du 31 décembre.png" },
   { title: "Soirée Coquine", date: "2026-01-07", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
 
@@ -84,7 +84,7 @@ const EVENTS = [
   
     // SAMEDIS (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  { title: "Samedi Aprem Spécial Gang Bang", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem Gang Bang (1).png" },
+  { title: "Samedi Aprem Spécial Gang Bang", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem Gang Bang (2).png" },
   { title: "Après-midi Coquine", date: "2025-12-27", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-03", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
