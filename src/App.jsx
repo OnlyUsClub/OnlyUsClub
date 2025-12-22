@@ -34,6 +34,7 @@ const EVENTS = [
   // MARDIS (Soir)
   { title: "Soirée Coquine",    date: "2025-12-09", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-16", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+  { title: "Soirée Coquine",    date: "2025-12-23", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-30", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
    { title: "Soirée Coquine",    date: "2026-01-06", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
    { title: "Soirée Coquine",    date: "2026-01-13", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
@@ -48,6 +49,7 @@ const EVENTS = [
   // MERCREDIS (Soir)
   { title: "Soirée Coquine", date: "2025-12-10", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
+  { title: "Soirée Mère Noël Mercredi 24 décembre", date: "2025-12-24", time: "20:30-01:00", theme: "Soirée", poster: "/Mère Noël Mercredi 24 décembre (1).png" },
   { title: "Soirée du Réveillon", date: "2025-12-31", time: "20:30-02:00", theme: "Soirée", poster: "/Copie de Copie de réveillon du 31 décembre.png" },
   { title: "Soirée Coquine", date: "2026-01-07", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
@@ -62,6 +64,7 @@ const EVENTS = [
   // JEUDIS SOIR
   { title: "Soirée Coquine",    date: "2025-12-11", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-18", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Père Noël le Jeudi 25 décembre",    date: "2025-12-25", time: "20:30-01:00", theme: "Soirée",     poster: "/Père Noël le Jeudi 25 décembre.png" },
   { title: "fermeture 1er janvier 2026",    date: "2026-01-01", time: "20:30-01:00", theme: "Soirée",     poster: "/fermeture 1er janvier 2026.png" },
   { title: "Soirée Initiation BDSM",    date: "2026-01-08", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi 8 janvier 2026 soiréee bdsm.jpeg" },
   { title: "Soirée Coquine",    date: "2026-01-15", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
