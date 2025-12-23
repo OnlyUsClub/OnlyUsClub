@@ -29,8 +29,9 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2025-12-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-16", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2025-12-30", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
-   { title: "Après-midi Coquine", date: "2026-01-06", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
-   { title: "Après-midi Coquine", date: "2026-01-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-06", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-13", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2025-12-20", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   // MARDIS (Soir)
   { title: "Soirée Coquine",    date: "2025-12-09", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-16", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
@@ -38,6 +39,7 @@ const EVENTS = [
   { title: "Soirée Coquine",    date: "2025-12-30", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
    { title: "Soirée Coquine",    date: "2026-01-06", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
    { title: "Soirée Coquine",    date: "2026-01-13", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-01-20", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
 
 
   // MERCREDIS (Aprem)
@@ -46,6 +48,7 @@ const EVENTS = [
   { title: "Soirée Coquine", date: "2025-12-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
    { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+  { title: "Soirée Coquine", date: "2025-12-21", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   // MERCREDIS (Soir)
   { title: "Soirée Coquine", date: "2025-12-10", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2025-12-17", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
@@ -53,6 +56,7 @@ const EVENTS = [
   { title: "Soirée du Réveillon", date: "2025-12-31", time: "20:30-02:00", theme: "Soirée", poster: "/Copie de Copie de réveillon du 31 décembre.png" },
   { title: "Soirée Coquine", date: "2026-01-07", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
+  { title: "Soirée Coquine", date: "2025-12-21", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
 
 
   // JEUDIS APREM
@@ -61,6 +65,7 @@ const EVENTS = [
   { title: "fermeture 1er janvier 2026", date: "2026-01-01", time: "14:00-19:00", theme: "Après-midi", poster: "/fermeture 1er janvier 2026.png" },
   { title: "Après-midi Coquine", date: "2026-01-08", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-15", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
+   { title: "Après-midi Coquine", date: "2026-01-22", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   // JEUDIS SOIR
   { title: "Soirée Coquine",    date: "2025-12-11", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2025-12-18", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
@@ -68,6 +73,7 @@ const EVENTS = [
   { title: "fermeture 1er janvier 2026",    date: "2026-01-01", time: "20:30-01:00", theme: "Soirée",     poster: "/fermeture 1er janvier 2026.png" },
   { title: "Soirée Initiation BDSM",    date: "2026-01-08", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi 8 janvier 2026 soiréee bdsm.jpeg" },
   { title: "Soirée Coquine",    date: "2026-01-15", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2025-12-22", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   
   
     // Vendredi (Aprem)
@@ -76,6 +82,7 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2026-01-02", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-09", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-16", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-01-23", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   // VENDREDIS (Soir)
   { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
   { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
@@ -110,6 +117,7 @@ const EVENTS = [
   { title: "Journée coquine", date: "2026-01-04", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-01-11", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-01-18", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-01-25", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
 
 
 
