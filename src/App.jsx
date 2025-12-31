@@ -43,7 +43,19 @@ const EVENTS = [
 
 
   // MERCREDIS (Aprem)
-  { title: "Soirée Coquine", date: "2025-12-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem Gang Bang.png" },
+{
+  title: "Soirée Coquine",
+  date: "2025-12-09",
+  time: "20:30-01:00",
+  theme: "Soirée",
+  poster: "/Mardi soir.png",
+  pricing: {
+    women: "Femmes & personnes trans invitées",
+    couples: "Couples : 25€",
+    men: "Hommes seuls : 35€"
+  }
+}
+
   { title: "Soirée Coquine", date: "2025-12-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2025-12-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
    { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
@@ -78,8 +90,6 @@ const EVENTS = [
   
     // Vendredi (Aprem)
   { title: "Après-midi Coquine", date: "2025-12-12", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2025-12-19", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-01-02", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-09", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-16", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-01-23", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
