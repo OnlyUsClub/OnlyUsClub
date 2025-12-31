@@ -89,7 +89,7 @@ const EVENTS = [
   { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
   { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
   { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
-  { title: "Soirée plaisirs sucrés", date: "2026-01-02", time: "20:00-01:00", theme: "Soirée", poster: "/soirée plaisirs sucrés du vendredi 2 janvier 2026 (1).png" },
+  { title: "Soirée plaisirs sucrés", date: "2026-01-02", time: "20:00-01:00", theme: "Soirée", poster: "soirée plaisirs sucrés du vendredi 2 janvier 2026.png" },
   { title: "Soirée BI", date: "2026-01-09", time: "20:00-01:00", theme: "Soirée", poster: "/soirée bi du vendredi 9 janvier 2026.png" },
   { title: "Soirée Uniforme", date: "2026-01-16", time: "20:00-01:00", theme: "Soirée", poster: "/soirée uniforme vendredi 16 janvier 2026.png" },
 
@@ -106,7 +106,7 @@ const EVENTS = [
   { title: "Soirée Cadeau", date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
   { title: "Soirée Mère Noël samedi 20 decembre", date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
   { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
-  { title: "Soirée Black Out", date: "2026-01-03", time: "20:00-01:00", theme: "Soirée", poster: "/samedi 3 janvier soirée black out (1).png" },
+  { title: "Soirée Black Out", date: "2026-01-03", time: "20:00-01:00", theme: "Soirée", poster: "samedi 3 janvier soirée black out.png" },
   { title: "Soirée Masquée", date: "2026-01-10", time: "20:00-01:00", theme: "Soirée", poster: "/samedi 10 janvier soirée bal masqué.png" },
   { title: "Soirée nuit de la tentation", date: "2026-01-17", time: "20:00-01:00", theme: "Soirée", poster: "/soirée nuit de la tentation samedi 17 janvier 2026 (1).png" },
 
