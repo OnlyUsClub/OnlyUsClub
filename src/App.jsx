@@ -45,10 +45,10 @@ const EVENTS = [
   // MERCREDIS (Aprem)
 {
   title: "Soirée Coquine",
-  date: "2025-12-09",
+  date: "2025-12-30",
   time: "20:30-01:00",
   theme: "Soirée",
-  poster: "/Mardi soir.png",
+  poster: "/Mercredi aprem.png",
   pricing: {
     women: "Femmes & personnes trans invitées",
     couples: "Couples : 25€",
@@ -56,8 +56,7 @@ const EVENTS = [
   }
 }
 
-  { title: "Soirée Coquine", date: "2025-12-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
-  { title: "Soirée Coquine", date: "2025-12-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+ 
    { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2025-12-21", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
