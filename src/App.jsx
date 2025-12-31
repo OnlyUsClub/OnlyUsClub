@@ -43,21 +43,7 @@ const EVENTS = [
 
 
   // MERCREDIS (Aprem)
-{
-  title: "Soirée Coquine",
-  date: "2025-12-30",
-  time: "20:30-01:00",
-  theme: "Soirée",
-  poster: "/Mercredi aprem.png",
-  pricing: {
-    women: "Femmes & personnes trans invitées",
-    couples: "Couples : 25€",
-    men: "Hommes seuls : 35€"
-  }
-}
-
- 
-   { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+  { title: "Soirée Coquine", date: "2026-01-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2026-01-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2025-12-21", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   // MERCREDIS (Soir)
@@ -130,10 +116,7 @@ const EVENTS = [
 
 
 
-  // ==== AJOUTE ICI tes nouveaux évènements de la capture ====
-  // FORMAT:
-  // { title: "Titre", date: "YYYY-MM-DD", time: "HH:MM", theme: "texte optionnel", poster: "/posters/slug-sans-date.png" },
-];
+
 
 /* =========================================================
    2) PRIX AUTOMATIQUES
