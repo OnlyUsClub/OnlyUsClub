@@ -92,10 +92,10 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2026-03-20", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-27", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   // VENDREDIS (Soir)
-  { title: "Soirée Mega pluralité",       date: "2026-02-07", time: "20:00-01:00", theme: "Nude", poster: "/2ff4100c-1f45-43db-9bf4-7952659dee1c.jpeg" },
-  { title: "Soirée trio",                 date: "2026-02-13", time: "20:00-01:00", theme: "Père Noël", poster: "/8dd5776f-a85d-4d8c-b1ca-76a056980678.jp" },
-  { title: "Soirée Disco",       date: "2026-02-20", time: "20:00-01:00", theme: "Nude", poster: "/883580b9-c3f8-4a69-abe8-4b20e0ec8f95.jpeg" },
-  { title: "Soirée Fluo",                 date: "2026-02-13", time: "20:00-01:00", theme: "Père Noël", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
+  { title: "Soirée Mega pluralité",       date: "2026-02-07", time: "20:00-01:00", theme: "mega pluralité", poster: "/2ff4100c-1f45-43db-9bf4-7952659dee1c.jpeg" },
+  { title: "Soirée trio",                 date: "2026-02-13", time: "20:00-01:00", theme: "trio", poster: "/8dd5776f-a85d-4d8c-b1ca-76a056980678.jpeg" },
+  { title: "Soirée Disco",       date: "2026-02-20", time: "20:00-01:00", theme: "disco", poster: "/883580b9-c3f8-4a69-abe8-4b20e0ec8f95.jpeg" },
+  { title: "Soirée Fluo",                 date: "2026-02-27", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
 
 
     // SAMEDIS (Aprem)
@@ -109,9 +109,9 @@ const EVENTS = [
   { title: "Après-midi Coquine", date: "2026-03-28", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
   { title: "Soirée Cadeau", date: "2026-02-07", time: "20:00-01:00", theme: "Sexy", poster: "/c55964f8-ae56-43f6-b960-5323af85c958.jpeg" },
-  { title: "Soirée Saint Valentin", date: "202-02-14", time: "20:00-01:00", theme: "Mère Noël", poster: "/11fbd0af-1d50-416a-9a91-2ddb0c3e8d35.jpeg" },
- { title: "Soirée infirmière", date: "2026-02-21", time: "20:00-01:00", theme: "Sexy", poster: "/f6c17557-17b6-4eeb-bebe-84d88773fc89.jpeg" },
-  { title: "Soirée Sourette", date: "202-02-28", time: "20:00-01:00", theme: "Mère Noël", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
+  { title: "Soirée Saint Valentin", date: "2026-02-14", time: "20:00-01:00", theme: "Saint Valentin", poster: "/11fbd0af-1d50-416a-9a91-2ddb0c3e8d35.jpeg" },
+ { title: "Soirée infirmière", date: "2026-02-21", time: "20:00-01:00", theme: "infirière", poster: "/f6c17557-17b6-4eeb-bebe-84d88773fc89.jpeg" },
+  { title: "Soirée Sourette", date: "2026-02-28", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
  
 
 
