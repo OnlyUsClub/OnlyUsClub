@@ -85,19 +85,17 @@ const EVENTS = [
 
     // Vendredi (Aprem)
   { title: "Après-midi Coquine", date: "2026-02-13", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-20-20", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-02-27", time: "14:00-19:00", theme: "Journée", poster: "/fermeture 1er janvier 2026.png" },
+  { title: "Après-midi Coquine", date: "2026-02-20", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-02-27", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-06", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-13", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-20", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-27", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   // VENDREDIS (Soir)
-  { title: "Soirée Nude",                                              date: "2025-12-12", time: "20:00-01:00", theme: "Nude", poster: "/nude (1).png" },
-  { title: "Soirée Père Noël vendredi 19 decembre",                 date: "2025-12-19", time: "20:00-01:00", theme: "Père Noël", poster: "/Père Noël vendredi 19 decembre.png" },
-  { title: "Soirée vendredi 26 décembre tenues osées et dévergondées", date: "2025-12-26", time: "20:00-01:00", theme: "Osée et dévergondées", poster: "/vendredi 26 décembre tenues osées et dévergondées (1).png" },
-  { title: "Soirée plaisirs sucrés", date: "2026-01-02", time: "20:00-01:00", theme: "Soirée", poster: "soirée plaisirs sucrés du vendredi 2 janvier 2026.png" },
-  { title: "Soirée BI", date: "2026-01-09", time: "20:00-01:00", theme: "Soirée", poster: "/soirée bi du vendredi 9 janvier 2026.png" },
-  { title: "Soirée Uniforme", date: "2026-01-16", time: "20:00-01:00", theme: "Soirée", poster: "/soirée uniforme vendredi 16 janvier 2026.png" },
+  { title: "Soirée Mega pluralité",       date: "2026-02-07", time: "20:00-01:00", theme: "Nude", poster: "/2ff4100c-1f45-43db-9bf4-7952659dee1c.jpeg" },
+  { title: "Soirée trio",                 date: "2026-02-13", time: "20:00-01:00", theme: "Père Noël", poster: "/8dd5776f-a85d-4d8c-b1ca-76a056980678.jp" },
+  { title: "Soirée Disco",       date: "2026-02-20", time: "20:00-01:00", theme: "Nude", poster: "/883580b9-c3f8-4a69-abe8-4b20e0ec8f95.jpeg" },
+  { title: "Soirée Fluo",                 date: "2026-02-13", time: "20:00-01:00", theme: "Père Noël", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
 
 
     // SAMEDIS (Aprem)
@@ -110,12 +108,11 @@ const EVENTS = [
    { title: "Après-midi Coquine", date: "2026-03-21", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-28", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   // SAMEDIS (Soir)
-  { title: "Soirée Cadeau", date: "2025-12-13", time: "20:00-01:00", theme: "Sexy", poster: "/Cadeau samedi 13 décembre.png" },
-  { title: "Soirée Mère Noël samedi 20 decembre", date: "2025-12-20", time: "20:00-01:00", theme: "Mère Noël", poster: "/Mère Noël samedi 20 decembre (1).png" },
-  { title: "Soirée samedi 27 décembre soirée tenues brillantes", date: "2025-12-27", time: "20:00-01:00", theme: "Brillant", poster: "/samedi 27 décembre soirée tenues brillantes (1).png" },
-  { title: "Soirée Black Out", date: "2026-01-03", time: "20:00-01:00", theme: "Soirée", poster: "samedi 3 janvier soirée black out.png" },
-  { title: "Soirée Masquée", date: "2026-01-10", time: "20:00-01:00", theme: "Soirée", poster: "/samedi 10 janvier soirée bal masqué.png" },
-  { title: "Soirée nuit de la tentation", date: "2026-01-17", time: "20:00-01:00", theme: "Soirée", poster: "/soirée nuit de la tentation samedi 17 janvier 2026 (1).png" },
+  { title: "Soirée Cadeau", date: "2026-02-07", time: "20:00-01:00", theme: "Sexy", poster: "/c55964f8-ae56-43f6-b960-5323af85c958.jpeg" },
+  { title: "Soirée Saint Valentin", date: "202-02-14", time: "20:00-01:00", theme: "Mère Noël", poster: "/11fbd0af-1d50-416a-9a91-2ddb0c3e8d35.jpeg" },
+ { title: "Soirée infirmière", date: "2026-02-21", time: "20:00-01:00", theme: "Sexy", poster: "/f6c17557-17b6-4eeb-bebe-84d88773fc89.jpeg" },
+  { title: "Soirée Sourette", date: "202-02-28", time: "20:00-01:00", theme: "Mère Noël", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
+ 
 
 
   // DIMANCHES (Soir)
