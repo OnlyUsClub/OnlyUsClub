@@ -27,7 +27,6 @@ const EVENTS = [
 
   // MARDIS (Aprem)
 
-  { title: "Après-midi Coquine", date: "2026-02-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-02-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-02-24", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-03", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
@@ -36,7 +35,7 @@ const EVENTS = [
    { title: "Après-midi Coquine", date: "2026-03-24", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   // MARDIS (Soir)
-   { title: "Soirée Coquine",    date: "2026-02-10", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+   
    { title: "Soirée Coquine",    date: "2026-02-17", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2026-02-24", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-03", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
@@ -116,7 +115,7 @@ const EVENTS = [
 
 
   // DIMANCHES (Soir)
-  { title: "Journée coquine", date: "2026-02-08", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  
   { title: "Journée coquine", date: "2026-02-15", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-02-22", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-03-01", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
