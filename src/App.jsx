@@ -80,10 +80,10 @@ const EVENTS = [
 
   { title: "Soirée Fluo", date: "2026-02-27", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
   { title: "Soirée Exhib tout est permis", date: "2026-03-06", time: "20:00-01:00", theme: "fluo", poster: "/08bdfed2-ae8c-4174-a828-f6ed89c04f8d.jpeg" },
-  { title: "Soirée Soumise", date: "2026-03-13", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
-  { title: "Soirée Roi et Reine : Galette", date: "2026-03-20", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
-    { title: "Soirée Latino", date: "2026-03-27", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
-   { title: "Soirée Troisième sexe", date: "2026-04-03", time: "20:00-01:00", theme: "fluo", poster: "/7da7cc68-deb7-4005-8353-656a533192a8.jpeg" },
+  { title: "Soirée Soumise", date: "2026-03-13", time: "20:00-01:00", theme: "fluo", poster: "/b7b3266c-f2c1-45ec-a5f1-9c85c8154c8e.jpeg" },
+  { title: "Soirée Roi et Reine : Galette", date: "2026-03-20", time: "20:00-01:00", theme: "fluo", poster: "/df31934d-b50c-4a5b-9a95-45825df01b62.jpeg" },
+    { title: "Soirée Latino", date: "2026-03-27", time: "20:00-01:00", theme: "fluo", poster: "/d2802191-6ee1-4283-8d13-1795c2f109ba.jpeg" },
+   { title: "Soirée Troisième sexe", date: "2026-04-03", time: "20:00-01:00", theme: "fluo", poster: "/23514085-e4ba-4e5c-8468-bf2d5ef5cfe6.jpeg" },
 
 
 
@@ -97,11 +97,11 @@ const EVENTS = [
   // SAMEDIS (Soir)
   
   { title: "Soirée Sourette", date: "2026-02-28", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
-  { title: "Soirée Cadeaux", date: "2026-03-07", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
-  { title: "Soirée Année 80's", date: "2026-03-14", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
-  { title: "Soirée Cocktails", date: "2026-03-21", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
-   { title: "Soirée Lingerie", date: "2026-03-28", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
-   { title: "Soirée Bal de promo sexy", date: "2026-04-04", time: "20:00-01:00", theme: "Soubrette", poster: "/3a2dad6b-84d7-4324-b56f-8977c08ca7f0.jpeg" },
+  { title: "Soirée Cadeaux", date: "2026-03-07", time: "20:00-01:00", theme: "Soubrette", poster: "/861b7960-e196-4594-8aa8-494940e968ff.jpeg" },
+  { title: "Soirée Année 80's", date: "2026-03-14", time: "20:00-01:00", theme: "Soubrette", poster: "/50c96311-0c94-4618-b436-b6769cc2172f.jpeg" },
+  { title: "Soirée Cocktails", date: "2026-03-21", time: "20:00-01:00", theme: "Soubrette", poster: "/f099671a-bd7d-4a7e-8c8d-0696ad51d0c6.jpeg" },
+   { title: "Soirée Lingerie", date: "2026-03-28", time: "20:00-01:00", theme: "Soubrette", poster: "/1e3c3e81-963f-4e1a-a4e6-1dbcb2012925.jpeg" },
+   { title: "Soirée Bal de promo sexy", date: "2026-04-04", time: "20:00-01:00", theme: "Soubrette", poster: "/1ee18a1d-2072-4b3b-a648-4a2ed65a6db8.jpeg" },
  
 
 
