@@ -108,11 +108,11 @@ const EVENTS = [
   // DIMANCHES (Soir)
   
   
-  { title: "Journée coquine", date: "2026-03-01", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2026-03-08", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2026-03-15", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2026-03-22", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2026-03-29", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-03-01", time: "14:00-22:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-03-08", time: "14:00-22:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-03-15", time: "14:00-22:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-03-22", time: "14:00-22:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-03-29", time: "14:00-22:00", theme: "Journée", poster: "/Dimanche.png" },
 
 
 
