@@ -28,15 +28,15 @@ const EVENTS = [
   // MARDIS (Aprem)
 
   
-  { title: "Après-midi Coquine", date: "2026-03-03", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-03-10", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-17", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
    { title: "Après-midi Coquine", date: "2026-03-24", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-31", time: "14:00-19:00", theme: "Après-midi", poster: "/Mardi aprem.png" },
   // MARDIS (Soir)
    
-  { title: "Soirée Coquine",    date: "2026-03-03", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
-  { title: "Soirée Coquine",    date: "2026-03-10", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-04-07", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-04-14", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-17", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-24", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-31", time: "20:30-01:00", theme: "Soirée",     poster: "/Mardi soir.png" },
@@ -44,35 +44,35 @@ const EVENTS = [
 
   // MERCREDIS (Aprem)
   
-  { title: "Soirée Coquine", date: "2026-03-04", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
-  { title: "Soirée Coquine", date: "2026-03-11", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+  { title: "Soirée Coquine", date: "2026-04-08", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
+  { title: "Soirée Coquine", date: "2026-04-15", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2026-03-18", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   { title: "Soirée Coquine", date: "2026-03-25", time: "14:00-19:00", theme: "Après-midi", poster: "/Mercredi aprem.png" },
   // MERCREDIS (Soir)
 
-  { title: "Soirée Coquine", date: "2026-03-04", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
-  { title: "Soirée Coquine", date: "2026-03-11", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
+  { title: "Soirée Coquine", date: "2026-04-08", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
+  { title: "Soirée Coquine", date: "2026-04-15", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2026-03-18", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
   { title: "Soirée Coquine", date: "2026-03-25", time: "20:30-01:00", theme: "Soirée", poster: "/Mercredi soir.png" },
 
 
   // JEUDIS APREM
  
-  { title: "Après-midi Coquine", date: "2026-03-05", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-03-12", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-09", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-16", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-19", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
    { title: "Après-midi Coquine", date: "2026-03-26", time: "14:00-19:00", theme: "Après-midi", poster: "/Jeudi aprem.png" },
   // JEUDIS SOIR
 
-  { title: "Soirée Coquine",    date: "2026-03-05", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
-  { title: "Soirée Coquine",    date: "2026-03-12", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-04-09", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
+  { title: "Soirée Coquine",    date: "2026-04-16", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-19", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
   { title: "Soirée Coquine",    date: "2026-03-26", time: "20:30-01:00", theme: "Soirée",     poster: "/Jeudi soir.png" },
 
 
     // Vendredi (Aprem)
-  { title: "Après-midi Coquine", date: "2026-02-27", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-03-06", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-10", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-17", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-13", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-20", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-27", time: "14:00-19:00", theme: "Journée", poster: "/Vendredi aprem.png" },
@@ -89,8 +89,8 @@ const EVENTS = [
 
     // SAMEDIS (Aprem)
  
-  { title: "Après-midi Coquine", date: "2026-02-28", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
-  { title: "Après-midi Coquine", date: "2026-03-07", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-04", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
+  { title: "Après-midi Coquine", date: "2026-04-11", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-14", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
    { title: "Après-midi Coquine", date: "2026-03-21", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
   { title: "Après-midi Coquine", date: "2026-03-28", time: "14:00-19:00", theme: "Après-midi", poster: "/Samedi Aprem.png" },
@@ -108,8 +108,8 @@ const EVENTS = [
   // DIMANCHES (Soir)
   
   
-  { title: "Journée coquine", date: "2026-03-01", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
-  { title: "Journée coquine", date: "2026-03-08", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-04-05", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
+  { title: "Journée coquine", date: "2026-04-12", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-03-15", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-03-22", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
   { title: "Journée coquine", date: "2026-03-29", time: "14:00-01:00", theme: "Journée", poster: "/Dimanche.png" },
